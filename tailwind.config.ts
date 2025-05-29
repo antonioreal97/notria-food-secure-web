@@ -18,7 +18,18 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'poppins': ['Poppins', 'sans-serif'],
+				'yrsa': ['Yrsa', 'serif'],
+			},
 			colors: {
+				// Notriá brand colors
+				'notria-primary': '#2F473F', // Verde Escuro - 50% usage
+				'notria-secondary': '#69C655', // Verde Claro - 25% usage
+				'notria-accent': '#CC4A23', // Laranja - 15% usage
+				'notria-light': '#EFECEA', // Cinza Claro - 10% usage
+				
+				// Keep existing shadcn colors
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
