@@ -2,16 +2,18 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { label: "Início", href: "#inicio" },
-    { label: "Sobre", href: "#sobre" },
-    { label: "Serviços", href: "#servicos" },
-    { label: "Diferenciais", href: "#diferenciais" },
-    { label: "Contato", href: "#contato" },
+    { label: "Início", href: "#inicio", isInternal: true },
+    { label: "Sobre", href: "#sobre", isInternal: true },
+    { label: "Serviços", href: "#servicos", isInternal: true },
+    { label: "Diferenciais", href: "#diferenciais", isInternal: true },
+    { label: "Colaboradores", href: "/colaboradores", isInternal: false },
+    { label: "Contato", href: "#contato", isInternal: true },
   ];
 
   return (
@@ -20,21 +22,33 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="bg-notria-primary text-white px-4 py-2 rounded-lg font-poppins font-bold text-xl">
-              Notriá
-            </div>
+            <Link to="/">
+              <div className="bg-notria-primary text-white px-4 py-2 rounded-lg font-poppins font-bold text-xl">
+                Notriá
+              </div>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {menuItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
-              >
-                {item.label}
-              </a>
+              item.isInternal ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
           </nav>
 
@@ -59,14 +73,25 @@ const Header = () => {
           <div className="md:hidden py-4 border-t">
             <nav className="flex flex-col space-y-4">
               {menuItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
+                item.isInternal ? (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.label}
+                    to={item.href}
+                    className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                )
               ))}
               <Button className="bg-notria-secondary hover:bg-notria-secondary/90 text-white font-poppins font-medium w-full mt-4">
                 Fale Conosco
