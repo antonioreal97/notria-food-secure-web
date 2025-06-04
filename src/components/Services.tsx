@@ -1,56 +1,57 @@
-
 import { CheckCircle, Users, FileText, BookOpen, Handshake, Search } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: CheckCircle,
-      title: "Diagnóstico e Avaliação",
-      description: "Análise completa de equipamentos públicos como bancos de alimentos, restaurantes populares e cozinhas comunitárias.",
-      features: ["Avaliação de processos", "Identificação de gargalos", "Relatórios técnicos", "Recomendações estratégicas"]
-    },
-    {
-      icon: Users,
-      title: "Capacitação de Gestores",
-      description: "Formação especializada para gestores e técnicos do setor de segurança alimentar e nutricional.",
-      features: ["Treinamentos presenciais", "Workshops práticos", "Metodologias inovadoras", "Certificação técnica"]
+      icon: Search,
+      title: "Diagnóstico da Segurança Alimentar",
+      description: "Realizamos análises detalhadas para identificar e mapear a insegurança alimentar em municípios e estados, utilizando metodologias reconhecidas e dados atualizados.",
+      features: [
+        "Mapeamento de vulnerabilidades",
+        "Análise de dados socioeconômicos",
+        "Relatórios estratégicos para tomada de decisão"
+      ]
     },
     {
       icon: FileText,
-      title: "Soluções Estratégicas",
-      description: "Desenvolvimento de estratégias personalizadas para otimização de políticas públicas.",
-      features: ["Planejamento estratégico", "Implementação de projetos", "Monitoramento de resultados", "Avaliação de impacto"]
+      title: "Adesão e manutenção do Sisan",
+      description: "Apoiamos municípios e estados em todo o processo de adesão, estruturação e manutenção do Sistema Nacional de Segurança Alimentar e Nutricional (Sisan), promovendo a integração de políticas e ações.",
+      features: [
+        "Orientação para adesão ao Sisan",
+        "Acompanhamento de processos e documentação",
+        "Capacitação de equipes gestoras"
+      ]
     },
     {
-      icon: BookOpen,
-      title: "Materiais Técnicos",
-      description: "Produção de conteúdo especializado e publicações científicas para o setor.",
-      features: ["Manuais técnicos", "Guias práticos", "Artigos científicos", "Relatórios de pesquisa"]
-    },
-    {
-      icon: Handshake,
-      title: "Consultoria Estratégica",
-      description: "Assessoria especializada para governos, ONGs e instituições públicas e privadas.",
-      features: ["Consultoria presencial", "Acompanhamento remoto", "Suporte técnico", "Orientação estratégica"]
-    },
-    {
-      icon: Search,
-      title: "Apoio Científico",
-      description: "Suporte técnico-científico e revisão teórica para projetos e pesquisas.",
-      features: ["Revisão bibliográfica", "Apoio metodológico", "Validação técnica", "Orientação científica"]
+      icon: CheckCircle,
+      title: "Estruturação e manutenção dos Equipamentos de Segurança Alimentar e Nutricional",
+      description: "Oferecemos suporte completo para implantação, reestruturação e gestão de equipamentos como bancos de alimentos, cozinhas comunitárias e restaurantes populares.",
+      features: [
+        "Implantação e reestruturação de equipamentos",
+        "Capacitação de equipes operacionais",
+        "Monitoramento e avaliação de resultados"
+      ]
     }
   ];
 
   return (
-    <section id="servicos" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="servicos" className="py-20 relative bg-white">
+      {/* Imagem de fundo */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <img
+          src="/assets/green.jpg"
+          alt="Fundo verde"
+          className="w-full h-full object-cover object-center opacity-100"
+        />
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-notria-primary mb-6">
+            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-white mb-6">
               Nossos Serviços
             </h2>
-            <p className="font-yrsa text-xl text-notria-primary/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="font-yrsa text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-bold">
               Oferecemos soluções completas em segurança alimentar e nutricional, 
               desde diagnósticos técnicos até implementação de políticas públicas eficazes.
             </p>

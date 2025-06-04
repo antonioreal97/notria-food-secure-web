@@ -1,18 +1,72 @@
-
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { useState } from "react";
 
 const Contact = () => {
+  const [form, setForm] = useState({
+    nome: "",
+    email: "",
+    telefone: "",
+    instituicao: "",
+    tipo_servico: "",
+    mensagem: "",
+  });
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSuccess(false);
+    setError(false);
+    try {
+      const response = await fetch("https://formspree.io/f/xzzryrop", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+      if (response.ok) {
+        setSuccess(true);
+        setForm({
+          nome: "",
+          email: "",
+          telefone: "",
+          instituicao: "",
+          tipo_servico: "",
+          mensagem: "",
+        });
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    }
+  };
+
   return (
-    <section id="contato" className="py-20 bg-notria-light">
-      <div className="container mx-auto px-4">
+    <section id="contato" className="py-20 relative bg-notria-light">
+      {/* Imagem de fundo */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <img
+          src="/assets/tomate.jpg"
+          alt="Fundo tomate"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-notria-primary mb-6">
+            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-white mb-6">
               Entre em Contato
             </h2>
-            <p className="font-yrsa text-xl text-notria-primary/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="font-yrsa text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               Pronto para transformar suas políticas de segurança alimentar? 
               Entre em contato conosco e vamos construir soluções juntos.
             </p>
@@ -25,7 +79,7 @@ const Contact = () => {
                 Solicite uma Consultoria
               </h3>
               
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label className="block font-poppins font-medium text-notria-primary mb-2">
@@ -33,8 +87,12 @@ const Contact = () => {
                     </label>
                     <input 
                       type="text" 
+                      name="nome"
+                      value={form.nome}
+                      onChange={handleChange}
                       className="w-full p-3 border border-notria-light rounded-lg focus:border-notria-secondary focus:outline-none transition-colors"
                       placeholder="Seu nome completo"
+                      required
                     />
                   </div>
                   <div>
@@ -43,8 +101,12 @@ const Contact = () => {
                     </label>
                     <input 
                       type="email" 
+                      name="email"
+                      value={form.email}
+                      onChange={handleChange}
                       className="w-full p-3 border border-notria-light rounded-lg focus:border-notria-secondary focus:outline-none transition-colors"
                       placeholder="seu@email.com"
+                      required
                     />
                   </div>
                 </div>
@@ -56,6 +118,9 @@ const Contact = () => {
                     </label>
                     <input 
                       type="tel" 
+                      name="telefone"
+                      value={form.telefone}
+                      onChange={handleChange}
                       className="w-full p-3 border border-notria-light rounded-lg focus:border-notria-secondary focus:outline-none transition-colors"
                       placeholder="(00) 00000-0000"
                     />
@@ -66,6 +131,9 @@ const Contact = () => {
                     </label>
                     <input 
                       type="text" 
+                      name="instituicao"
+                      value={form.instituicao}
+                      onChange={handleChange}
                       className="w-full p-3 border border-notria-light rounded-lg focus:border-notria-secondary focus:outline-none transition-colors"
                       placeholder="Nome da instituição"
                     />
@@ -76,7 +144,7 @@ const Contact = () => {
                   <label className="block font-poppins font-medium text-notria-primary mb-2">
                     Tipo de Serviço
                   </label>
-                  <select className="w-full p-3 border border-notria-light rounded-lg focus:border-notria-secondary focus:outline-none transition-colors">
+                  <select name="tipo_servico" value={form.tipo_servico} onChange={handleChange} className="w-full p-3 border border-notria-light rounded-lg focus:border-notria-secondary focus:outline-none transition-colors">
                     <option value="">Selecione o serviço de interesse</option>
                     <option value="diagnostico">Diagnóstico e Avaliação</option>
                     <option value="capacitacao">Capacitação de Gestores</option>
@@ -92,16 +160,26 @@ const Contact = () => {
                     Mensagem *
                   </label>
                   <textarea 
+                    name="mensagem"
+                    value={form.mensagem}
+                    onChange={handleChange}
                     rows={5}
                     className="w-full p-3 border border-notria-light rounded-lg focus:border-notria-secondary focus:outline-none transition-colors resize-none"
                     placeholder="Descreva brevemente sua necessidade ou projeto..."
+                    required
                   ></textarea>
                 </div>
 
-                <Button className="w-full bg-notria-secondary hover:bg-notria-secondary/90 text-white font-poppins font-semibold py-3 text-lg">
+                <Button type="submit" className="w-full bg-notria-secondary hover:bg-notria-secondary/90 text-white font-poppins font-semibold py-3 text-lg">
                   <Send className="mr-2" size={20} />
                   Enviar Mensagem
                 </Button>
+                {success && (
+                  <p className="text-green-600 font-poppins text-center">Mensagem enviada com sucesso!</p>
+                )}
+                {error && (
+                  <p className="text-red-600 font-poppins text-center">Ocorreu um erro ao enviar. Tente novamente.</p>
+                )}
               </form>
             </div>
 
@@ -119,7 +197,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-poppins font-medium text-notria-primary">E-mail</p>
-                      <p className="font-yrsa text-notria-primary/70">contato@notriaconsultoria.com.br</p>
+                      <a href="mailto:contato@notria.com.br" className="font-yrsa text-notria-primary/70 hover:underline">contato@notria.com.br</a>
                     </div>
                   </div>
 
@@ -129,7 +207,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-poppins font-medium text-notria-primary">Telefone</p>
-                      <p className="font-yrsa text-notria-primary/70">(11) 99999-9999</p>
+                      <p className="font-yrsa text-notria-primary/70">(31) 99233-0826</p>
                     </div>
                   </div>
 
@@ -139,26 +217,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-poppins font-medium text-notria-primary">Localização</p>
-                      <p className="font-yrsa text-notria-primary/70">São Paulo, SP - Brasil</p>
+                      <p className="font-yrsa text-notria-primary/70">Belo Horizonte, MG - Brasil</p>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div className="bg-notria-primary p-8 rounded-2xl text-white">
-                <h3 className="font-poppins font-semibold text-xl mb-4">
-                  Horário de Atendimento
-                </h3>
-                <div className="space-y-2 font-yrsa">
-                  <p>Segunda a Sexta: 8h às 18h</p>
-                  <p>Sábado: 8h às 12h</p>
-                  <p className="text-white/70">Domingo: Fechado</p>
-                </div>
-                
-                <div className="mt-6 pt-6 border-t border-white/20">
-                  <p className="font-yrsa text-sm text-white/80">
-                    Resposta garantida em até 24 horas úteis
-                  </p>
                 </div>
               </div>
             </div>

@@ -1,4 +1,3 @@
-
 import { Target, Users, Heart, Lightbulb } from "lucide-react";
 
 const About = () => {
@@ -25,6 +24,33 @@ const About = () => {
     }
   ];
 
+  const values = [
+    {
+      title: "Excelência",
+      description: "Buscamos sempre a mais alta qualidade em tudo o que fazemos, garantindo que nossos serviços e soluções sejam rigorosamente elaborados, entregues com precisão e superem as expectativas de nossos parceiros."
+    },
+    {
+      title: "Colaboração",
+      description: "Valorizamos o trabalho em equipe e a troca de conhecimentos, tanto internamente quanto com nossos parceiros. Acreditamos que a força coletiva é essencial para alcançar resultados significativos e sustentáveis."
+    },
+    {
+      title: "Proatividade",
+      description: "Antecipamos desafios e oportunidades, agindo de forma ágil e estratégica para oferecer soluções antes que os problemas se tornem obstáculos."
+    },
+    {
+      title: "Adaptabilidade",
+      description: "Estamos preparadas para nos ajustar a diferentes contextos e demandas, criando soluções flexíveis que se adequem às realidades específicas de cada cliente e projeto."
+    },
+    {
+      title: "Ética",
+      description: "Nossas decisões e ações são guiadas por um compromisso inabalável com a integridade, a transparência e o respeito às pessoas e às instituições com as quais colaboramos."
+    },
+    {
+      title: "Impacto Sustentável",
+      description: "Priorizamos práticas e soluções que geram benefícios de longo prazo, promovendo resultados que não apenas atendem às necessidades imediatas, mas que também constroem um futuro mais equilibrado e sustentável."
+    },
+  ];
+
   return (
     <section id="sobre" className="py-20 bg-notria-light">
       <div className="container mx-auto px-4">
@@ -41,20 +67,17 @@ const About = () => {
           </div>
 
           {/* Objectives Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            {objectives.map((objective, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {values.map((value, index) => (
               <div 
                 key={index} 
                 className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow group"
               >
-                <div className="bg-notria-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-notria-secondary/20 transition-colors">
-                  <objective.icon className="text-notria-secondary" size={32} />
-                </div>
                 <h3 className="font-poppins font-semibold text-lg text-notria-primary mb-3">
-                  {objective.title}
+                  {value.title}
                 </h3>
                 <p className="font-yrsa text-notria-primary/70 leading-relaxed">
-                  {objective.description}
+                  {value.description}
                 </p>
               </div>
             ))}
