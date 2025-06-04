@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,23 +33,6 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {menuItems.map((item) => (
-              item.isInternal ? (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
-                >
-                  {item.label}
-                </a>
-              ) : (
-                <Link
-                  key={item.label}
-                  to={item.href}
-                  className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
-                >
-                  {item.label}
-                </Link>
-              )
               item.isInternal ? (
                 <a
                   key={item.label}
