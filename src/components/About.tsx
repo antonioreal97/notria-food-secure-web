@@ -47,7 +47,7 @@ const About = () => {
     },
     {
       title: "Impacto Sustentável",
-      description: "Priorizamos práticas e soluções que geram benefícios de longo prazo, promovendo resultados que não apenas atendem às necessidades imediatas, mas que também constroem um futuro mais equilibrado e sustentável."
+      description: "Priorizamos práticas e soluções que geram benefícios de longo prazo, promovendo resultados que não apenas atendam às necessidades imediatas, mas que também construam um futuro mais equilibrado e sustentável."
     },
   ];
 
@@ -61,8 +61,7 @@ const About = () => {
               Quem Somos
             </h2>
             <p className="font-yrsa text-xl text-notria-primary/80 max-w-3xl mx-auto leading-relaxed">
-              A Notriá Consultoria é especializada em Segurança Alimentar e Nutricional, 
-              dedicada a transformar políticas públicas e gerar impacto real na vida das pessoas.
+              A Notriá Consultoria é especializada em Segurança Alimentar e Nutricional, <br />dedicada a transformar políticas públicas e gerar impacto real na vida das pessoas.
             </p>
           </div>
 

@@ -50,8 +50,9 @@ const Hero = () => {
           </h1>
           
           <p className="font-yrsa text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
-          Mais do que uma consultoria, somos parceiras estratégicas de quem busca 
-          gerar impacto com resultados claros, alinhando eficiência operacional e progresso social.
+          Mais do que uma consultoria, somos uma parceira estratégica de quem busca 
+          gerar impacto com resultados claros, alinhando eficiência operacional e 
+          progresso social.
           </p>
 
           {/* Carrossel de Imagens */}

@@ -1,10 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isColaboradoresPage = location.pathname === "/colaboradores";
+  const navigate = useNavigate();
 
   const menuItems = [
     { label: "Início", href: "#inicio", isInternal: true },
@@ -14,6 +17,21 @@ const Header = () => {
     { label: "Colaboradores", href: "/colaboradores", isInternal: false },
     { label: "Contato", href: "#contato", isInternal: true },
   ];
+
+  const getHref = (item: typeof menuItems[0]) => {
+    if (!item.isInternal) return item.href;
+    if (isColaboradoresPage) {
+      return `/${item.href}`;
+    }
+    return item.href;
+  };
+
+  const handleMenuClick = (item: typeof menuItems[0]) => {
+    if (!item.isInternal) return;
+    if (isColaboradoresPage) {
+      navigate("/", { state: { hash: item.href } });
+    }
+  };
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -36,8 +54,14 @@ const Header = () => {
               item.isInternal ? (
                 <a
                   key={item.label}
-                  href={"/" + item.href}
+                  href={getHref(item)}
                   className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
+                  onClick={(e) => {
+                    if (isColaboradoresPage) {
+                      e.preventDefault();
+                      handleMenuClick(item);
+                    }
+                  }}
                 >
                   {item.label}
                 </a>
@@ -83,9 +107,17 @@ const Header = () => {
                 item.isInternal ? (
                   <a
                     key={item.label}
-                    href={"/" + item.href}
+                    href={getHref(item)}
                     className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={(e) => {
+                      if (isColaboradoresPage) {
+                        e.preventDefault();
+                        handleMenuClick(item);
+                        setIsMenuOpen(false);
+                      } else {
+                        setIsMenuOpen(false);
+                      }
+                    }}
                   >
                     {item.label}
                   </a>

@@ -7,78 +7,163 @@ import Footer from "@/components/Footer";
 
 const colaboradores = [
   {
-    nome: "Natalia Tenuta Kuchenbecker do Amaral",
+    nome: "Natalia Tenuta",
     image: "/assets/team1.png",
     materiais: [
       {
         tipo: "Artigo",
-        nome: "Bancos de alimentos no Brasil: doação, funcionamento e avaliação de bancos de alimentos brasileiros",
-        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+        nome: "Bancos de alimentos brasileiros: como avaliá-los? (2024).",
+        link: "https://www.scielo.br/j/csc/a/JkrmcT8nRhgVdKjcKPk65MH/"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "Ajustes e alternativas para a operacionalização de alimentos públicos da região metropolitana de Belo Horizonte, Minas Gerais, Brasil",
-        link: "https://lattes.cnpq.br/477.1/4/2/6/1506/"
+        nome: "A lógica da intervenção e dos indicadores de monitoramento e avaliação de bancos de alimentos brasileiros (2023).",
+        link: "https://dx.doi.org/10.5771/vi/1426.51056"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "Perfil nutricional dos usuários de bancos de alimentos públicos da região metropolitana de Belo Horizonte, Minas Gerais, Brasil",
-        link: "https://www.mdpi.com/1661-6499/21/6/1225"
+        nome: "Perfil nutricional dos alimentos doados por bancos de alimentos públicos da região metropolitana de Belo Horizonte, Minas Gerais, Brasil (2022)",
+        link: ""
       },
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "Análises dos alimentos recebidos: uma revisão de literatura nacional",
-        link: "https://dx.doi.org/10.3390/nu12061584?utm_source=researcher_app&utm_medium=referral&utm_campaign=RESR_MRKT_Researcher_inbound"
+        nome: "Bancos de Alimentos Brasileiros: Panorama e Perspectivas (2022)",
+        link: "https://www.mdpi.com/1660-4601/18/32/12598"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Avaliação dos Bancos de Alimentos de Minas Gerais no combate às perdas e desperdícios de alimentos (2021).",
+        link: "https://dx.doi.org/10.20396/rbi.v20i0.92865405"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "A eficácia dos Bancos de Alimentos de Minas Gerais no combate às perdas e desperdícios de alimentos (2017).",
+        link: "https://periodicos.sbu.unicamp.br/ojs/index.php/san/article/view/8649720"
+      },
+      {
+        tipo: "Livros publicados/organizados ou edições",
+        nome: "Perspectivas da saúde coletiva no Vale do Jequitinhonha: temas, debates e reflexões (2021).",
+        link: "https://dx.doi.org/10.46898/rb.2020%20acd974f9-aa98-4211-87ad-d1000c26909"
       },
       {
         tipo: "Capítulos de livros publicados",
-        nome: "AÇÕES DE ADAPTAÇÃO E MITIGAÇÃO NA GESTÃO DE UM BANCO DE ALIMENTOS. CAMINHOS PARA A SEGURANÇA ALIMENTAR E NUTRICIONAL, NUTRIÇÃO CLÍNICA METABÓLICA E ESPORTIVA",
-        link: "https://dx.doi.org/10.46897/978-65-86821-13-8.02d.4743?lang=en"
+        nome: "A segurança dos alimentos brasileiros. In: Ednilson Sergio Ramalho de Souza. (Org.). Pesquisas em Temas de Ciências da Saúde (2023).",
+        link: "https://editorascience.com.br/livros/ebook0041"
       },
       {
         tipo: "Capítulos de livros publicados",
-        nome: "Ações de promoção da saúde coletiva. Perspectivas de saúde coletiva no Vale do Jequitinhonha: temas, debates e reflexões",
-        link: "https://aedetecra.com.br/revista/perspectivas-de-saude-coletiva/"
+        nome: "AVALIAÇÃO E ADAPTAÇÃO DA ESTRUTURA FÍSICA DE UM BANCO DE ALIMENTOS: CAMINHOS PARA A SEGURANÇA ALIMENTAR E NUTRICIONAL. NUTRIÇÃO CLÍNICA METABÓLICA E ESPORTIVA (2022).",
+        link: "https://editorascience.com.br/livros/ebook0041"
+      },
+      {
+        tipo: "Capítulos de livros publicados",
+        nome: "Segurança Alimentar e Nutricional. Perspectivas da Saúde Coletiva. Perspectivas da saúde coletiva no Vale do Jequitinhonha: temas, debates e reflexões (2020).",
+        link: "https://aedetora.com.br/produto/perspectivas-da-saude-coletiva-no-vale-do-jequitinhonha-temas-debates-e-reflexoes/"
       },
       {
         tipo: "Produção técnica",
-        nome: "Documento Técnico contendo resultados de monitoramento e avaliação de bancos de alimentos.",
+        nome: "Matriz de Fortalecimento da Rede Mesa Brasil Sesc (2020).",
         link: ""
       },
       {
         tipo: "Produção técnica",
-        nome: "Documento Técnico contendo resultados de avaliação de perdas e desperdícios de alimentos.",
+        nome: "Documento Técnico contendo proposta de alinhamento de conceitos e processos no âmbito da Rede Brasileira de Bancos de Alimentos (2019).",
         link: ""
       },
       {
         tipo: "Produção técnica",
-        nome: "Documento Técnico contendo resultados de estratégias de sustentabilidade financeira com gestores de bancos de alimentos.",
+        nome: "Documento Técnico contendo proposta de revisão e atualização dos materiais educativos para os bancos de alimentos da Rede Brasileira de Bancos de Alimentos (Guia para Boas Práticas para Bancos de Alimentos) (2018).",
         link: ""
       },
       {
         tipo: "Produção técnica",
-        nome: "Documento Técnico contendo resultados de estratégias de educação alimentar e nutricional.",
+        nome: "Documento Técnico contendo subsídios para a Carta de Princípios do Comitê Gestor com vistas a subsidiar as negociações estratégicas com agentes externos à Rede Brasileira de Bancos de Alimentos (2018).",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento Técnico contendo proposta de metodologia para o monitoramento das ações previstas na 'Estratégia Intersetorial de Prevenção e Controle da Obesidade', incluindo a elaboração de instrumento(s) por eixo e forma de aplicação no âmbito das CAISANs estaduais (2017).",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento Técnico contendo análise e avaliação das ações de prevenção e controle da obesidade implantadas no âmbito estadual, com descrição das ações que se destacam e recomendações de aprimoramento (2017).",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento Técnico contendo proposta de conteúdo para elaboração de material de sensibilização, incentivo e aperfeiçoamento das ações de prevenção e controle da obesidade, bem como as etapas metodológicas para mobilização das CAISANs estaduais (2017).",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento técnico contendo proposta de metodologia para o monitoramento das ações previstas na 'Estratégia Intersetorial de Prevenção e Controle da Obesidade', incluindo a elaboração de instrumento(s) por eixo e forma de aplicação no âmbito das CAISANs estaduais (2017).",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento Técnico contendo proposta de material e ações para o fomento e incentivo às ações de Educação Alimentar e Promoção da Alimentação Adequada e Saudável (2017).",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento Técnico com sistematização da necessidade dos estados e municípios no que se refere à realização de ações de Educação Alimentar e Nutricional e Promoção da Alimentação Adequada e Saudável (2015).",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento Técnico contendo proposta metodológica para o fomento e incentivo à realização de ações de Educação Alimentar e Promoção da Alimentação Adequada e Saudável nos estados e municípios por meio das Câmaras Intersetoriais de Segurança Alimentar e Nutricional Estatuais (2015).",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento Técnico contendo plano de ação voltado aos municípios para o fomento de ações de Educação Alimentar e Promoção da Alimentação Adequada e Saudável (2014).",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Análise instrumental dos bancos de alimentos.",
+        nome: "Relatório Técnico-Científico - Avaliação Nacional de Bancos de Alimentos (2022).",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Relatório Final - Avaliação Nacional de Bancos de Alimentos (2021).",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Relatório Preliminar - Avaliação Nacional de Bancos de Alimentos (2020).",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Relatório Preliminar - Avaliação Nacional de Bancos de Alimentos (2019).",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Folder - Doadores Parceiros de Bancos de Alimentos (2019).",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Mapa Operacional para Bancos de Alimentos (2019).",
         link: ""
       },
       {
         tipo: "Dissertação",
-        nome: "Análise instrumental dos bancos de alimentos de Minas Gerais",
-        link: "https://repositorio.ufjf.em.br/bitstream/2c2-0a67f0-5f64-4b39-a5f6-71b0b57afea1/"
+        nome: "Análise instrumental da situação dos Bancos de Alimentos de Minas Gerais",
+        link: "https://repositorio.ufjm.edu.br/items/22c04d70-5f6d-4a39-ab5f-71b80e57e5e1"
       },
       {
-        tipo: "Tese + Destaque",
-        nome: "BANCOS DE ALIMENTOS BRASILEIROS: Contribuições para a Segurança Alimentar e Nutricional. Redução de Perdas e Desperdício de Alimentos e Educação Alimentar e Nutricional",
+        tipo: "Tese - Destaque",
+        nome: "BANCOS DE ALIMENTOS BRASILEIROS: Contribuições para a Segurança Alimentar e Nutricional. Redução de Perdas e Desperdícios de Alimentos e Educação Alimentar e Nutricional",
         link: ""
       }
     ]
   },
   {
-    nome: "Juliana Theodora Cunha de Oliveira",
+    nome: "Juliana Theodora",
     image: "/assets/team2.png",
     materiais: [
       {
@@ -220,7 +305,7 @@ const colaboradores = [
     ]
   },
   {
-    nome: "Ana Carolina Einseidt Mattos",
+    nome: "Ana Mattos",
     image: "/assets/team4.png",
     materiais: [
       {

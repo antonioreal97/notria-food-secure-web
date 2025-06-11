@@ -25,9 +25,9 @@ const Footer = () => {
             <div>
               <h3 className="font-poppins font-semibold text-lg mb-4">Contato</h3>
               <div className="space-y-2 font-yrsa text-white/80">
-                <a href="mailto:contato@notria.com.br" className="hover:underline">contato@notria.com.br</a>
+                <a href="mailto:contato@notria.com.br" className="hover:underline">notriaconsultoria.01@gmail.com</a>
                 <p>(31) 99233-0826</p>
-                <p>Belo Horizonte, MG - Brasil</p>
+                <p>Minas Gerais - Brasil</p>
               </div>
             </div>
           </div>

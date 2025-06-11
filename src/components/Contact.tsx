@@ -197,7 +197,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-poppins font-medium text-notria-primary">E-mail</p>
-                      <a href="mailto:contato@notria.com.br" className="font-yrsa text-notria-primary/70 hover:underline">contato@notria.com.br</a>
+                      <a href="mailto:notriaconsultoria.01@gmail.com" className="font-yrsa text-notria-primary/70 hover:underline">notriaconsultoria.01@gmail.com</a>
                     </div>
                   </div>
 
@@ -217,7 +217,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-poppins font-medium text-notria-primary">Localização</p>
-                      <p className="font-yrsa text-notria-primary/70">Belo Horizonte, MG - Brasil</p>
+                      <p className="font-yrsa text-notria-primary/70">Minas Gerais - Brasil</p>
                     </div>
                   </div>
                 </div>

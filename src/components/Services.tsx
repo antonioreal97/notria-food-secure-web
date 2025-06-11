@@ -4,22 +4,22 @@ const Services = () => {
   const services = [
     {
       icon: Search,
-      title: "Diagnóstico da Segurança Alimentar",
-      description: "Realizamos análises detalhadas para identificar e mapear a insegurança alimentar em municípios e estados, utilizando metodologias reconhecidas e dados atualizados.",
+      title: "Diagnóstico de Segurança Alimentar e Nutricional",
+      description: "Realizamos análises detalhadas para mapear a segurança alimentar e nutricional de estados e municípios, utilizando metodologias cientificamente validadas, produzindo estudos técnicos de qualidade.",
       features: [
-        "Mapeamento de vulnerabilidades",
-        "Análise de dados socioeconômicos",
-        "Relatórios estratégicos para tomada de decisão"
+        "Mapeamento do estado de SAN e InSAN",
+        "Análise de dados de contextos locais",
+        "Relatórios estratégicos para tomada de decisão"
       ]
     },
     {
       icon: FileText,
       title: "Adesão e manutenção do Sisan",
-      description: "Apoiamos municípios e estados em todo o processo de adesão, estruturação e manutenção do Sistema Nacional de Segurança Alimentar e Nutricional (Sisan), promovendo a integração de políticas e ações.",
+      description: "Apoiamos estados e municípios em todo o processo de estruturação, adesão e manutenção do Sistema Nacional de Segurança Alimentar e Nutricional (Sisan), promovendo a integração de políticas e ações.",
       features: [
-        "Orientação para adesão ao Sisan",
-        "Acompanhamento de processos e documentação",
-        "Capacitação de equipes gestoras"
+        "Orientação para fortalecimento do Sisan",
+        "Elaboração de documentos estratégicos",
+        "Capacitação de conselhos, e de equipes gestoras e técnicas"
       ]
     },
     {
@@ -52,8 +52,7 @@ const Services = () => {
               Nossos Serviços
             </h2>
             <p className="font-yrsa text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-bold">
-              Oferecemos soluções completas em segurança alimentar e nutricional, 
-              desde diagnósticos técnicos até implementação de políticas públicas eficazes.
+              Oferecemos soluções completas em segurança alimentar e nutricional,<br /> desde diagnósticos técnicos até implementação de políticas públicas eficazes.
             </p>
           </div>
 

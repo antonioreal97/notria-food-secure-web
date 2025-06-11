@@ -4,13 +4,13 @@ const teamMembers = [
   {
     name: "Natalia Tenuta",
     role: "Diretora Executiva",
-    description: "Nutricionista, Doutora em Saúde Coletiva",
+    description: "Nutricionista e Doutora em Saúde Coletiva",
     image: "/assets/team1.png",
   },
   {
     name: "Juliana Theodora",
     role: "Diretora de Pesquisa e Inovação",
-    description: "Nutricionista, Doutora em Nutrição",
+    description: "Nutricionista e Doutora em Nutrição",
     image: "/assets/team2.png",
   },
   {
@@ -21,7 +21,7 @@ const teamMembers = [
   },
   {
     name: "Ana Mattos",
-    role: "Consultora Sênior em Segurança Alimentar e Nutricional",
+    role: "Consultora Externa em Segurança Alimentar e Nutricional",
     description: "Nutricionista e Doutora em Políticas Públicas",
     image: "/assets/team4.png",
   },
@@ -34,7 +34,7 @@ const teamMembers = [
   {
     name: "Antônio Real",
     role: "Consultor em Análise de Dados e Sistemas",
-    description: "Administrador, cientista de dados.",
+    description: "Administrador e Cientista de Dados.",
     image: "/assets/team6.png",
   },
 ];
