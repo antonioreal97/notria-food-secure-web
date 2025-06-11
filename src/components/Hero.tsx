@@ -41,7 +41,7 @@ const Hero = () => {
   return (
     <section id="inicio" className="bg-gradient-to-br from-notria-primary via-notria-primary to-notria-secondary min-h-screen flex items-center">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center text-white">
+        <div className="max-w-4xl mx-auto text-center text-white mt-16">
           <h1 className="font-poppins font-bold text-4xl md:text-6xl mb-6 leading-tight">
             <span className="block">Consultoria em</span>
             <span className="text-notria-secondary block mt-2">

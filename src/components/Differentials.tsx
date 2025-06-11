@@ -1,7 +1,13 @@
-
 import { Award, Lightbulb, Users, Target } from "lucide-react";
 
 const Differentials = () => {
+  const handleWhatsAppRedirect = () => {
+    const phoneNumber = "5531992330826";
+    const message = "Olá! Gostaria de solicitar uma consultoria sobre segurança alimentar e nutricional.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   const differentials = [
     {
       icon: Award,
@@ -71,7 +77,10 @@ const Differentials = () => {
                 Entre em contato conosco e descubra como podemos ajudar a fortalecer 
                 suas políticas de segurança alimentar e nutricional.
               </p>
-              <button className="bg-notria-secondary hover:bg-notria-secondary/90 text-white font-poppins font-semibold px-8 py-4 rounded-lg text-lg transition-colors">
+              <button 
+                onClick={handleWhatsAppRedirect}
+                className="bg-notria-secondary hover:bg-notria-secondary/90 text-white font-poppins font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+              >
                 Solicitar Consultoria
               </button>
             </div>

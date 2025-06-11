@@ -36,7 +36,7 @@ const Header = () => {
               item.isInternal ? (
                 <a
                   key={item.label}
-                  href={item.href}
+                  href={"/" + item.href}
                   className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
                 >
                   {item.label}
@@ -83,7 +83,7 @@ const Header = () => {
                 item.isInternal ? (
                   <a
                     key={item.label}
-                    href={item.href}
+                    href={"/" + item.href}
                     className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
                     onClick={() => setIsMenuOpen(false)}
                   >
