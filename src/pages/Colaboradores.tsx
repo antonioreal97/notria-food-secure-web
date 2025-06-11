@@ -7,6 +7,128 @@ import Footer from "@/components/Footer";
 
 const colaboradores = [
   {
+    nome: "Natalia Tenuta Kuchenbecker do Amaral",
+    image: "/assets/team1.png",
+    materiais: [
+      {
+        tipo: "Artigo",
+        nome: "Bancos de alimentos no Brasil: doação, funcionamento e avaliação de bancos de alimentos brasileiros",
+        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Ajustes e alternativas para a operacionalização de alimentos públicos da região metropolitana de Belo Horizonte, Minas Gerais, Brasil",
+        link: "https://lattes.cnpq.br/477.1/4/2/6/1506/"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Perfil nutricional dos usuários de bancos de alimentos públicos da região metropolitana de Belo Horizonte, Minas Gerais, Brasil",
+        link: "https://www.mdpi.com/1661-6499/21/6/1225"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Análises dos alimentos recebidos: uma revisão de literatura nacional",
+        link: "https://dx.doi.org/10.3390/nu12061584?utm_source=researcher_app&utm_medium=referral&utm_campaign=RESR_MRKT_Researcher_inbound"
+      },
+      {
+        tipo: "Capítulos de livros publicados",
+        nome: "AÇÕES DE ADAPTAÇÃO E MITIGAÇÃO NA GESTÃO DE UM BANCO DE ALIMENTOS. CAMINHOS PARA A SEGURANÇA ALIMENTAR E NUTRICIONAL, NUTRIÇÃO CLÍNICA METABÓLICA E ESPORTIVA",
+        link: "https://dx.doi.org/10.46897/978-65-86821-13-8.02d.4743?lang=en"
+      },
+      {
+        tipo: "Capítulos de livros publicados",
+        nome: "Ações de promoção da saúde coletiva. Perspectivas de saúde coletiva no Vale do Jequitinhonha: temas, debates e reflexões",
+        link: "https://aedetecra.com.br/revista/perspectivas-de-saude-coletiva/"
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento Técnico contendo resultados de monitoramento e avaliação de bancos de alimentos.",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento Técnico contendo resultados de avaliação de perdas e desperdícios de alimentos.",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento Técnico contendo resultados de estratégias de sustentabilidade financeira com gestores de bancos de alimentos.",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento Técnico contendo resultados de estratégias de educação alimentar e nutricional.",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Análise instrumental dos bancos de alimentos.",
+        link: ""
+      },
+      {
+        tipo: "Dissertação",
+        nome: "Análise instrumental dos bancos de alimentos de Minas Gerais",
+        link: "https://repositorio.ufjf.em.br/bitstream/2c2-0a67f0-5f64-4b39-a5f6-71b0b57afea1/"
+      },
+      {
+        tipo: "Tese + Destaque",
+        nome: "BANCOS DE ALIMENTOS BRASILEIROS: Contribuições para a Segurança Alimentar e Nutricional. Redução de Perdas e Desperdício de Alimentos e Educação Alimentar e Nutricional",
+        link: ""
+      }
+    ]
+  },
+  {
+    nome: "Juliana Theodora Cunha de Oliveira",
+    image: "/assets/team2.png",
+    materiais: [
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "A fome e a raiva (e o vírus): lições dos home - reflexões sobre participação social em tempos de Covid-19",
+        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Restaurantes Populares: resistência, avaliação e mediação de segurança alimentar e nutricional",
+        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Restaurantes Populares: avaliação da implementação do Direito Humano à Alimentação Adequada: proposição de um modelo avaliativo",
+        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Medição de trabalho do nutricionista: 80 anos de história da segurança alimentar e nutricional",
+        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento técnico contendo resultados técnicos sobre a situação das Cozinhas Comunitárias e Restaurantes Populares mantidos pelo poder público no Brasil.",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento técnico contendo resultados de diagnóstico e caracterização dos Equipamentos Públicos de Segurança Alimentar e Nutricional",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento técnico contendo resultados de coleta de dados sobre a gestão financeira das Cozinhas Comunitárias e Restaurantes Populares no Brasil",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento técnico contendo resultados de estratégias de sustentabilidade financeira com gestores de Cozinhas Comunitárias e Restaurantes Populares",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento Técnico contendo Proposta de sustentabilidade financeira e estratégias de comercialização baseadas na alimentação adequada e saudável nas Cozinhas Comunitárias e Restaurantes Populares",
+        link: ""
+      }
+    ]
+  },
+  {
     nome: "Milena Martins",
     image: "/assets/team3.png",
     materiais: [
@@ -154,128 +276,6 @@ const colaboradores = [
     ]
   },
   {
-    nome: "Juliana Theodora Cunha de Oliveira",
-    image: "/assets/team2.png",
-    materiais: [
-      {
-        tipo: "Artigos completos publicados em periódicos",
-        nome: "A fome e a raiva (e o vírus): lições dos home - reflexões sobre participação social em tempos de Covid-19",
-        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
-      },
-      {
-        tipo: "Artigos completos publicados em periódicos",
-        nome: "Restaurantes Populares: resistência, avaliação e mediação de segurança alimentar e nutricional",
-        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
-      },
-      {
-        tipo: "Artigos completos publicados em periódicos",
-        nome: "Restaurantes Populares: avaliação da implementação do Direito Humano à Alimentação Adequada: proposição de um modelo avaliativo",
-        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
-      },
-      {
-        tipo: "Artigos completos publicados em periódicos",
-        nome: "Medição de trabalho do nutricionista: 80 anos de história da segurança alimentar e nutricional",
-        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento técnico contendo resultados técnicos sobre a situação das Cozinhas Comunitárias e Restaurantes Populares mantidos pelo poder público no Brasil.",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento técnico contendo resultados de diagnóstico e caracterização dos Equipamentos Públicos de Segurança Alimentar e Nutricional",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento técnico contendo resultados de coleta de dados sobre a gestão financeira das Cozinhas Comunitárias e Restaurantes Populares no Brasil",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento técnico contendo resultados de estratégias de sustentabilidade financeira com gestores de Cozinhas Comunitárias e Restaurantes Populares",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo Proposta de sustentabilidade financeira e estratégias de comercialização baseadas na alimentação adequada e saudável nas Cozinhas Comunitárias e Restaurantes Populares",
-        link: ""
-      }
-    ]
-  },
-  {
-    nome: "Natalia Tenuta Kuchenbecker do Amaral",
-    image: "/assets/team1.png",
-    materiais: [
-      {
-        tipo: "Artigo",
-        nome: "Bancos de alimentos no Brasil: doação, funcionamento e avaliação de bancos de alimentos brasileiros",
-        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
-      },
-      {
-        tipo: "Artigos completos publicados em periódicos",
-        nome: "Ajustes e alternativas para a operacionalização de alimentos públicos da região metropolitana de Belo Horizonte, Minas Gerais, Brasil",
-        link: "https://lattes.cnpq.br/477.1/4/2/6/1506/"
-      },
-      {
-        tipo: "Artigos completos publicados em periódicos",
-        nome: "Perfil nutricional dos usuários de bancos de alimentos públicos da região metropolitana de Belo Horizonte, Minas Gerais, Brasil",
-        link: "https://www.mdpi.com/1661-6499/21/6/1225"
-      },
-      {
-        tipo: "Artigos completos publicados em periódicos",
-        nome: "Análises dos alimentos recebidos: uma revisão de literatura nacional",
-        link: "https://dx.doi.org/10.3390/nu12061584?utm_source=researcher_app&utm_medium=referral&utm_campaign=RESR_MRKT_Researcher_inbound"
-      },
-      {
-        tipo: "Capítulos de livros publicados",
-        nome: "AÇÕES DE ADAPTAÇÃO E MITIGAÇÃO NA GESTÃO DE UM BANCO DE ALIMENTOS. CAMINHOS PARA A SEGURANÇA ALIMENTAR E NUTRICIONAL, NUTRIÇÃO CLÍNICA METABÓLICA E ESPORTIVA",
-        link: "https://dx.doi.org/10.46897/978-65-86821-13-8.02d.4743?lang=en"
-      },
-      {
-        tipo: "Capítulos de livros publicados",
-        nome: "Ações de promoção da saúde coletiva. Perspectivas de saúde coletiva no Vale do Jequitinhonha: temas, debates e reflexões",
-        link: "https://aedetecra.com.br/revista/perspectivas-de-saude-coletiva/"
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo resultados de monitoramento e avaliação de bancos de alimentos.",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo resultados de avaliação de perdas e desperdícios de alimentos.",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo resultados de estratégias de sustentabilidade financeira com gestores de bancos de alimentos.",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo resultados de estratégias de educação alimentar e nutricional.",
-        link: ""
-      },
-      {
-        tipo: "Trabalhos técnicos",
-        nome: "Análise instrumental dos bancos de alimentos.",
-        link: ""
-      },
-      {
-        tipo: "Dissertação",
-        nome: "Análise instrumental dos bancos de alimentos de Minas Gerais",
-        link: "https://repositorio.ufjf.em.br/bitstream/2c2-0a67f0-5f64-4b39-a5f6-71b0b57afea1/"
-      },
-      {
-        tipo: "Tese + Destaque",
-        nome: "BANCOS DE ALIMENTOS BRASILEIROS: Contribuições para a Segurança Alimentar e Nutricional. Redução de Perdas e Desperdício de Alimentos e Educação Alimentar e Nutricional",
-        link: ""
-      }
-    ]
-  },
-  {
     nome: "Isabela Matos",
     image: "/assets/team5.png",
     materiais: [] // Sem materiais publicados
@@ -288,11 +288,7 @@ const colaboradores = [
 ];
 
 const Colaboradores = () => {
-  const [expanded, setExpanded] = useState<number | null>(null);
-
-  const handleToggle = (idx: number) => {
-    setExpanded(expanded === idx ? null : idx);
-  };
+  const [selectedColaborador, setSelectedColaborador] = useState<number | null>(null);
 
   return (
     <div className="min-h-screen">
@@ -312,72 +308,103 @@ const Colaboradores = () => {
         </div>
       </section>
 
-      {/* Colaboradores Section */}
+      {/* Main Content Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {colaboradores.map((colaborador, idx) => {
-              const isOpen = expanded === idx;
-              return (
-                <Card
-                  key={idx}
-                  className={`h-full flex flex-col items-center text-center cursor-pointer transition-all duration-300 ${isOpen ? "shadow-2xl" : "shadow-md"}`}
-                  onClick={() => handleToggle(idx)}
-                >
+          <div className="flex flex-col md:flex-row gap-8">
+            {/* Sidebar */}
+            <div className="w-full md:w-1/3 lg:w-1/4">
+              <Card className="sticky top-4">
+                <CardHeader>
+                  <CardTitle className="font-poppins text-notria-primary">
+                    Colaboradores
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2">
+                    {colaboradores.map((colaborador, idx) => (
+                      <Button
+                        key={idx}
+                        variant={selectedColaborador === idx ? "default" : "ghost"}
+                        className={`w-full justify-start ${
+                          selectedColaborador === idx
+                            ? "bg-notria-primary text-white"
+                            : "hover:bg-notria-primary/10"
+                        }`}
+                        onClick={() => setSelectedColaborador(idx)}
+                      >
+                        <User size={16} className="mr-2" />
+                        {colaborador.nome}
+                      </Button>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Colaborador Details */}
+            <div className="flex-1">
+              {selectedColaborador === null ? (
+                <Card className="h-full flex items-center justify-center p-8">
+                  <div className="text-center text-gray-500">
+                    <User size={48} className="mx-auto mb-4" />
+                    <p className="text-lg">Selecione um colaborador para ver seus detalhes</p>
+                  </div>
+                </Card>
+              ) : (
+                <Card className="h-full">
                   <CardHeader className="flex flex-col items-center">
-                    {colaborador.image && (
+                    {colaboradores[selectedColaborador].image && (
                       <img
-                        src={colaborador.image}
-                        alt={colaborador.nome}
-                        className="w-32 h-32 object-cover rounded-full mb-4 border-4 border-notria-primary"
+                        src={colaboradores[selectedColaborador].image}
+                        alt={colaboradores[selectedColaborador].nome}
+                        className="w-48 h-48 object-cover rounded-full mb-4 border-4 border-notria-primary"
                       />
                     )}
-                    <CardTitle className="font-poppins text-notria-primary flex items-center gap-2">
-                      {colaborador.nome}
-                      {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                    <CardTitle className="font-poppins text-notria-primary text-2xl">
+                      {colaboradores[selectedColaborador].nome}
                     </CardTitle>
                   </CardHeader>
-                  {isOpen && (
-                    <CardContent className="flex-1 flex flex-col w-full">
-                      <div className="mb-6">
-                        <h4 className="font-poppins font-semibold text-notria-primary mb-3 flex items-center gap-2 justify-center">
-                          Materiais
-                        </h4>
-                        {colaborador.materiais.length === 0 ? (
-                          <p className="text-gray-500 text-sm text-center">Nenhum material publicado até o momento.</p>
-                        ) : (
-                          <div className="space-y-3">
-                            {colaborador.materiais.map((material, index) => (
-                              <div key={index} className="border-l-3 border-notria-secondary pl-3 text-left">
-                                <h5 className="font-medium text-sm text-notria-primary mb-1">
-                                  {material.tipo}
-                                </h5>
-                                <p className="text-xs text-gray-600 mb-1">
-                                  {material.nome}
-                                </p>
-                                {material.link && (
-                                  <Button
-                                    variant="ghost"
-                                    size="sm"
-                                    className="text-notria-secondary hover:text-notria-secondary/80 p-0 h-auto"
-                                    asChild
-                                  >
-                                    <a href={material.link} target="_blank" rel="noopener noreferrer">
-                                      <ExternalLink size={14} className="mr-1" />
-                                      Acessar material
-                                    </a>
-                                  </Button>
-                                )}
-                              </div>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    </CardContent>
-                  )}
+                  <CardContent>
+                    <div className="mb-6">
+                      <h4 className="font-poppins font-semibold text-notria-primary mb-3 flex items-center gap-2">
+                        <BookOpen size={20} />
+                        Materiais
+                      </h4>
+                      {colaboradores[selectedColaborador].materiais.length === 0 ? (
+                        <p className="text-gray-500 text-center">Nenhum material publicado até o momento.</p>
+                      ) : (
+                        <div className="space-y-4">
+                          {colaboradores[selectedColaborador].materiais.map((material, index) => (
+                            <div key={index} className="border-l-4 border-notria-secondary pl-4">
+                              <h5 className="font-medium text-notria-primary mb-1">
+                                {material.tipo}
+                              </h5>
+                              <p className="text-gray-600 mb-2">
+                                {material.nome}
+                              </p>
+                              {material.link && (
+                                <Button
+                                  variant="ghost"
+                                  size="sm"
+                                  className="text-notria-secondary hover:text-notria-secondary/80 p-0 h-auto"
+                                  asChild
+                                >
+                                  <a href={material.link} target="_blank" rel="noopener noreferrer">
+                                    <ExternalLink size={14} className="mr-1" />
+                                    Acessar material
+                                  </a>
+                                </Button>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </CardContent>
                 </Card>
-              );
-            })}
+              )}
+            </div>
           </div>
         </div>
       </section>
