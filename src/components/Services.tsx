@@ -28,8 +28,8 @@ const Services = () => {
       description: "Oferecemos suporte completo para implantação, reestruturação e gestão de equipamentos como bancos de alimentos, cozinhas comunitárias e restaurantes populares.",
       features: [
         "Implantação e reestruturação de equipamentos",
-        "Capacitação de equipes operacionais",
-        "Monitoramento e avaliação de resultados"
+        "Capacitação de equipes gestoras e operacionais",
+        "Monitoramento e avaliação dos equipamentos"
       ]
     }
   ];
