@@ -1,4 +1,33 @@
+import { Link, useLocation, useNavigate } from "react-router-dom";
+
 const Footer = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isColaboradoresPage = location.pathname === "/colaboradores";
+
+  const menuItems = [
+    { label: "Início", href: "#inicio", isInternal: true },
+    { label: "Sobre", href: "#sobre", isInternal: true },
+    { label: "Serviços", href: "#servicos", isInternal: true },
+    { label: "Diferenciais", href: "#diferenciais", isInternal: true },
+    { label: "Contato", href: "#contato", isInternal: true },
+  ];
+
+  const handleMenuClick = (item: typeof menuItems[0]) => {
+    if (!item.isInternal) return;
+    if (isColaboradoresPage) {
+      navigate("/", { state: { hash: item.href } });
+    }
+  };
+
+  const getHref = (item: typeof menuItems[0]) => {
+    if (!item.isInternal) return item.href;
+    if (isColaboradoresPage) {
+      return `/${item.href}`;
+    }
+    return item.href;
+  };
+
   return (
     <footer className="bg-notria-primary text-white py-12">
       <div className="container mx-auto px-4">
@@ -6,18 +35,31 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Brand */}
             <div>
-              <img src="/assets/logo-2.png" alt="Logo Notriá" className="h-17 mb-4" />
+              <Link to="/">
+                <img src="/assets/logo-2.png" alt="Logo Notriá" className="h-17 mb-4" />
+              </Link>
             </div>
 
             {/* Quick Links */}
             <div>
               <h3 className="font-poppins font-semibold text-lg mb-4">Links Rápidos</h3>
               <ul className="space-y-2 font-yrsa">
-                <li><a href="#inicio" className="text-white/80 hover:text-white transition-colors">Início</a></li>
-                <li><a href="#sobre" className="text-white/80 hover:text-white transition-colors">Sobre</a></li>
-                <li><a href="#servicos" className="text-white/80 hover:text-white transition-colors">Serviços</a></li>
-                <li><a href="#diferenciais" className="text-white/80 hover:text-white transition-colors">Diferenciais</a></li>
-                <li><a href="#contato" className="text-white/80 hover:text-white transition-colors">Contato</a></li>
+                {menuItems.map((item) => (
+                  <li key={item.label}>
+                    <a
+                      href={getHref(item)}
+                      className="text-white/80 hover:text-white transition-colors"
+                      onClick={(e) => {
+                        if (isColaboradoresPage) {
+                          e.preventDefault();
+                          handleMenuClick(item);
+                        }
+                      }}
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -25,7 +67,7 @@ const Footer = () => {
             <div>
               <h3 className="font-poppins font-semibold text-lg mb-4">Contato</h3>
               <div className="space-y-2 font-yrsa text-white/80">
-                <a href="mailto:contato@notria.com.br" className="hover:underline">notriaconsultoria.01@gmail.com</a>
+                <a href="mailto:notriaconsultoria.01@gmail.com" className="hover:underline">notriaconsultoria.01@gmail.com</a>
                 <p>(31) 99233-0826</p>
                 <p>Minas Gerais - Brasil</p>
               </div>
