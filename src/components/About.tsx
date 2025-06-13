@@ -70,12 +70,12 @@ const About = () => {
             {values.map((value, index) => (
               <div 
                 key={index} 
-                className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow group"
+                className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group"
               >
-                <h3 className="font-poppins font-semibold text-lg text-notria-primary mb-3">
+                <h3 className="font-poppins font-semibold text-lg text-notria-primary mb-3 group-hover:text-notria-secondary transition-colors duration-300">
                   {value.title}
                 </h3>
-                <p className="font-yrsa text-notria-primary/70 leading-relaxed">
+                <p className="font-yrsa text-notria-primary/70 leading-relaxed group-hover:text-notria-primary/90 transition-colors duration-300">
                   {value.description}
                 </p>
               </div>

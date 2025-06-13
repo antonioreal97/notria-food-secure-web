@@ -50,17 +50,17 @@ const Differentials = () => {
             {differentials.map((differential, index) => (
               <div 
                 key={index} 
-                className="bg-white/10 backdrop-blur-sm p-8 rounded-xl hover:bg-white/20 transition-all group border border-white/20"
+                className="bg-white/10 backdrop-blur-sm p-8 rounded-xl hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group border border-white/20 hover:border-white/40"
               >
-                <div className="bg-notria-secondary w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <differential.icon className="text-white" size={32} />
+                <div className="bg-notria-secondary w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:bg-white/20">
+                  <differential.icon className="text-white group-hover:text-notria-secondary transition-colors duration-300" size={32} />
                 </div>
                 
-                <h3 className="font-poppins font-semibold text-2xl text-white mb-4">
+                <h3 className="font-poppins font-semibold text-2xl text-white mb-4 group-hover:text-notria-secondary transition-colors duration-300">
                   {differential.title}
                 </h3>
                 
-                <p className="font-yrsa text-white/90 leading-relaxed text-lg">
+                <p className="font-yrsa text-white/90 leading-relaxed text-lg group-hover:text-white transition-colors duration-300">
                   {differential.description}
                 </p>
               </div>
