@@ -1,4 +1,5 @@
 import { Target, Users, Heart, Lightbulb } from "lucide-react";
+import { AnimatedSection } from "@/components/ui/animated-section";
 
 const About = () => {
   const objectives = [
@@ -56,20 +57,24 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-notria-primary mb-6">
-              Quem Somos
-            </h2>
-            <p className="font-yrsa text-xl text-notria-primary/80 max-w-3xl mx-auto leading-relaxed">
-              A Notriá Consultoria é especializada em Segurança Alimentar e Nutricional, <br />dedicada a transformar políticas públicas e gerar impacto real na vida das pessoas.
-            </p>
-          </div>
+          <AnimatedSection animation="slide-up" delay={200}>
+            <div className="text-center mb-16">
+              <h2 className="font-poppins font-bold text-4xl md:text-5xl text-notria-primary mb-6">
+                Quem Somos
+              </h2>
+              <p className="font-yrsa text-xl text-notria-primary/80 max-w-3xl mx-auto leading-relaxed">
+                A Notriá Consultoria é especializada em Segurança Alimentar e Nutricional, <br />dedicada a transformar políticas públicas e gerar impacto real na vida das pessoas.
+              </p>
+            </div>
+          </AnimatedSection>
 
           {/* Objectives Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {values.map((value, index) => (
-              <div 
+              <AnimatedSection 
                 key={index} 
+                animation="slide-up" 
+                delay={300 + (index * 100)}
                 className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group"
               >
                 <h3 className="font-poppins font-semibold text-lg text-notria-primary mb-3 group-hover:text-notria-secondary transition-colors duration-300">
@@ -78,23 +83,25 @@ const About = () => {
                 <p className="font-yrsa text-notria-primary/70 leading-relaxed group-hover:text-notria-primary/90 transition-colors duration-300">
                   {value.description}
                 </p>
-              </div>
+              </AnimatedSection>
             ))}
           </div>
 
           {/* Mission Statement */}
-          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-            <div className="text-center">
-              <h3 className="font-poppins font-bold text-2xl md:text-3xl text-notria-primary mb-6">
-                Nossa Missão
-              </h3>
-              <p className="font-yrsa text-lg md:text-xl text-notria-primary/80 leading-relaxed max-w-4xl mx-auto">
-                Promover a segurança alimentar e nutricional através de consultoria especializada, 
-                capacitação de gestores e desenvolvimento de soluções estratégicas que fortaleçam 
-                políticas públicas e gerem impacto sustentável no combate à fome e à insegurança alimentar.
-              </p>
+          <AnimatedSection animation="scale-in" delay={600}>
+            <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+              <div className="text-center">
+                <h3 className="font-poppins font-bold text-2xl md:text-3xl text-notria-primary mb-6">
+                  Nossa Missão
+                </h3>
+                <p className="font-yrsa text-lg md:text-xl text-notria-primary/80 leading-relaxed max-w-4xl mx-auto">
+                  Promover a segurança alimentar e nutricional através de consultoria especializada, 
+                  capacitação de gestores e desenvolvimento de soluções estratégicas que fortaleçam 
+                  políticas públicas e gerem impacto sustentável no combate à fome e à insegurança alimentar.
+                </p>
+              </div>
             </div>
-          </div>
+          </AnimatedSection>
         </div>
       </div>
     </section>

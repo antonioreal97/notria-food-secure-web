@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimatedSection } from "@/components/ui/animated-section";
 
 const teamMembers = [
   {
@@ -52,19 +53,27 @@ const Team = () => {
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-notria-primary mb-6">
-              Nossa Equipe
-            </h2>
+          <AnimatedSection animation="slide-up" delay={200}>
+            <div className="text-center mb-16">
+              <h2 className="font-poppins font-bold text-4xl md:text-5xl text-notria-primary mb-6">
+                Nossa Equipe
+              </h2>
             </div>
+          </AnimatedSection>
+          
           <div className="grid md:grid-cols-3 gap-8">
             {teamMembers.map((member, idx) => (
-              <div key={idx} className="bg-notria-light p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group">
+              <AnimatedSection 
+                key={idx} 
+                animation="scale-in" 
+                delay={400 + (idx * 150)}
+                className="bg-notria-light p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group"
+              >
                 <img src={member.image} alt={member.name} className="w-32 h-32 object-cover rounded-full mb-4 border-4 border-notria-primary group-hover:border-notria-secondary transition-colors duration-300" />
                 <h3 className="font-poppins font-semibold text-xl text-notria-primary mb-2 group-hover:text-notria-secondary transition-colors duration-300">{member.name}</h3>
                 <p className="font-yrsa text-notria-primary/80 mb-1 group-hover:text-notria-primary transition-colors duration-300">{member.role}</p>
                 <p className="font-yrsa text-notria-primary/60 text-sm group-hover:text-notria-primary/80 transition-colors duration-300">{member.description}</p>
-              </div>
+              </AnimatedSection>
             ))}
           </div>
         </div>

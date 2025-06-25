@@ -1,4 +1,5 @@
 import { CheckCircle, Users, FileText, BookOpen, Handshake, Search } from "lucide-react";
+import { AnimatedSection } from "@/components/ui/animated-section";
 
 const Services = () => {
   const services = [
@@ -47,20 +48,24 @@ const Services = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-white mb-6">
-              Nossos Serviços
-            </h2>
-            <p className="font-yrsa text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-bold">
-              Oferecemos soluções completas em segurança alimentar e nutricional,<br /> desde diagnósticos técnicos até implementação de políticas públicas eficazes.
-            </p>
-          </div>
+          <AnimatedSection animation="slide-up" delay={200}>
+            <div className="text-center mb-16">
+              <h2 className="font-poppins font-bold text-4xl md:text-5xl text-white mb-6">
+                Nossos Serviços
+              </h2>
+              <p className="font-yrsa text-xl text-white/90 max-w-3xl mx-auto leading-relaxed font-bold">
+                Oferecemos soluções completas em segurança alimentar e nutricional,<br /> desde diagnósticos técnicos até implementação de políticas públicas eficazes.
+              </p>
+            </div>
+          </AnimatedSection>
 
           {/* Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div 
+              <AnimatedSection 
                 key={index} 
+                animation="slide-up" 
+                delay={400 + (index * 200)}
                 className="bg-white/70 backdrop-blur-md p-8 rounded-xl hover:shadow-lg transition-shadow group border border-notria-light"
               >
                 <div className="bg-notria-primary w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-notria-secondary transition-colors">
@@ -83,7 +88,7 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </AnimatedSection>
             ))}
           </div>
         </div>

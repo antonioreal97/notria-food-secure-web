@@ -1,0 +1,27 @@
+{
+  "name": "Notriá Consultoria - Segurança Alimentar e Nutricional",
+  "short_name": "Notriá",
+  "description": "Consultoria especializada em Segurança Alimentar e Nutricional (SAN). Soluções estratégicas, capacitação e avaliação de políticas públicas para combater a insegurança alimentar.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2F473F",
+  "theme_color": "#69C655",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/logo-primary.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/logo-primary.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "education", "health"],
+  "lang": "pt-BR",
+  "dir": "ltr"
+} 

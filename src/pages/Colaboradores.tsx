@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, User, BookOpen, ChevronDown, ChevronUp } from "lucide-react";
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -377,6 +378,7 @@ const Colaboradores = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO title="Nossa Equipe" description="Conheça os especialistas que fazem a diferença na segurança alimentar e nutricional" />
       <Header />
       
       {/* Hero Section */}
