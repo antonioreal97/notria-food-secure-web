@@ -30,8 +30,8 @@ const About = () => {
       description: "Buscamos sempre a mais alta qualidade em tudo o que fazemos, garantindo que nossos serviços e soluções sejam rigorosamente elaborados, entregues com precisão e superem as expectativas de nossos parceiros."
     },
     {
-      title: "Colaboração",
-      description: "Valorizamos o trabalho em equipe e a troca de conhecimentos, tanto internamente quanto com nossos parceiros. Acreditamos que a força coletiva é essencial para alcançar resultados significativos e sustentáveis."
+      title: "Baseada em evidências",
+      description: "Nossa metodologia é baseada em evidências científicas e em práticas comprovadas, garantindo que as soluções que oferecemos sejam eficazes e sustentáveis."
     },
     {
       title: "Proatividade",
