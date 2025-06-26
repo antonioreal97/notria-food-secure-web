@@ -58,14 +58,14 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <AnimatedSection animation="slide-up" delay={200}>
-            <div className="text-center mb-16">
-              <h2 className="font-poppins font-bold text-4xl md:text-5xl text-notria-primary mb-6">
-                Quem Somos
-              </h2>
-              <p className="font-yrsa text-xl text-notria-primary/80 max-w-3xl mx-auto leading-relaxed">
-                A Notriá Consultoria é especializada em Segurança Alimentar e Nutricional, <br />dedicada a transformar políticas públicas e gerar impacto real na vida das pessoas.
-              </p>
-            </div>
+          <div className="text-center mb-16">
+            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-notria-primary mb-6">
+              Quem Somos
+            </h2>
+            <p className="font-yrsa text-xl text-notria-primary/80 max-w-3xl mx-auto leading-relaxed">
+              A Notriá Consultoria é especializada em Segurança Alimentar e Nutricional, <br />dedicada a transformar políticas públicas e gerar impacto real na vida das pessoas.
+            </p>
+          </div>
           </AnimatedSection>
 
           {/* Objectives Grid */}
@@ -89,18 +89,18 @@ const About = () => {
 
           {/* Mission Statement */}
           <AnimatedSection animation="scale-in" delay={600}>
-            <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-              <div className="text-center">
-                <h3 className="font-poppins font-bold text-2xl md:text-3xl text-notria-primary mb-6">
-                  Nossa Missão
-                </h3>
-                <p className="font-yrsa text-lg md:text-xl text-notria-primary/80 leading-relaxed max-w-4xl mx-auto">
-                  Promover a segurança alimentar e nutricional através de consultoria especializada, 
-                  capacitação de gestores e desenvolvimento de soluções estratégicas que fortaleçam 
-                  políticas públicas e gerem impacto sustentável no combate à fome e à insegurança alimentar.
-                </p>
-              </div>
+          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+            <div className="text-center">
+              <h3 className="font-poppins font-bold text-2xl md:text-3xl text-notria-primary mb-6">
+                Nossa Missão
+              </h3>
+              <p className="font-yrsa text-lg md:text-xl text-notria-primary/80 leading-relaxed max-w-4xl mx-auto">
+                Promover a segurança alimentar e nutricional através de consultoria especializada, 
+                capacitação de gestores e desenvolvimento de soluções estratégicas que fortaleçam 
+                políticas públicas e gerem impacto sustentável no combate à fome e à insegurança alimentar.
+              </p>
             </div>
+          </div>
           </AnimatedSection>
         </div>
       </div>

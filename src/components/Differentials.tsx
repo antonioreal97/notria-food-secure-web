@@ -38,14 +38,14 @@ const Differentials = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <AnimatedSection animation="slide-up" delay={200}>
-            <div className="text-center mb-16">
-              <h2 className="font-poppins font-bold text-4xl md:text-5xl text-white mb-6">
-                Nossos Diferenciais
-              </h2>
-              <p className="font-yrsa text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-                O que nos torna únicos na transformação de políticas públicas de segurança alimentar e nutricional.
-              </p>
-            </div>
+          <div className="text-center mb-16">
+            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-white mb-6">
+              Nossos Diferenciais
+            </h2>
+            <p className="font-yrsa text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+              O que nos torna únicos na transformação de políticas públicas de segurança alimentar e nutricional.
+            </p>
+          </div>
           </AnimatedSection>
 
           {/* Differentials Grid */}
@@ -74,23 +74,23 @@ const Differentials = () => {
 
           {/* Call to Action */}
           <AnimatedSection animation="scale-in" delay={800}>
-            <div className="text-center mt-16">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/20">
-                <h3 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-4">
-                  Pronto para Transformar sua Instituição?
-                </h3>
-                <p className="font-yrsa text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-                  Entre em contato conosco e descubra como podemos ajudar a fortalecer 
-                  suas políticas de segurança alimentar e nutricional.
-                </p>
-                <button 
-                  onClick={handleWhatsAppRedirect}
-                  className="bg-notria-secondary hover:bg-notria-secondary/90 text-white font-poppins font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
-                >
-                  Solicitar Consultoria
-                </button>
-              </div>
+          <div className="text-center mt-16">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/20">
+              <h3 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-4">
+                Pronto para Transformar sua Instituição?
+              </h3>
+              <p className="font-yrsa text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+                Entre em contato conosco e descubra como podemos ajudar a fortalecer 
+                suas políticas de segurança alimentar e nutricional.
+              </p>
+              <button 
+                onClick={handleWhatsAppRedirect}
+                className="bg-notria-secondary hover:bg-notria-secondary/90 text-white font-poppins font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+              >
+                Solicitar Consultoria
+              </button>
             </div>
+          </div>
           </AnimatedSection>
         </div>
       </div>

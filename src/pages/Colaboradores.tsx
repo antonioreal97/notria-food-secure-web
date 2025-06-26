@@ -14,12 +14,12 @@ const colaboradores = [
       {
         tipo: "Artigo",
         nome: "Bancos de alimentos brasileiros: como avaliá-los? (2024).",
-        link: "https://www.scielo.br/j/csc/a/JkrmcT8nRhgVdKjcKPk65MH/"
+        link: "https://www.scielo.br/j/csc/a/JrkmcTBnRhgVKgNKcPk65MH/"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
         nome: "A lógica da intervenção e dos indicadores de monitoramento e avaliação de bancos de alimentos brasileiros (2023).",
-        link: "https://dx.doi.org/10.5771/vi/1426.51056"
+        link: "https://dx.doi.org/10.9771/ns.v14i26.51056"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
@@ -29,12 +29,12 @@ const colaboradores = [
       {
         tipo: "Artigos completos publicados em periódicos",
         nome: "Bancos de Alimentos Brasileiros: Panorama e Perspectivas (2022)",
-        link: "https://www.mdpi.com/1660-4601/18/32/12598"
+        link: "https://www.mdpi.com/1660-4601/18/23/12598"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
         nome: "Avaliação dos Bancos de Alimentos de Minas Gerais no combate às perdas e desperdícios de alimentos (2021).",
-        link: "https://dx.doi.org/10.20396/rbi.v20i0.92865405"
+        link: "https://dx.doi.org/10.20396/san.v28i00.%208665406"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
@@ -44,22 +44,22 @@ const colaboradores = [
       {
         tipo: "Livros publicados/organizados ou edições",
         nome: "Perspectivas da saúde coletiva no Vale do Jequitinhonha: temas, debates e reflexões (2021).",
-        link: "https://dx.doi.org/10.46898/rb.2020%20acd974f9-aa98-4211-87ad-d1000c26909"
+        link: ""
       },
       {
         tipo: "Capítulos de livros publicados",
-        nome: "A segurança dos alimentos brasileiros. In: Ednilson Sergio Ramalho de Souza. (Org.). Pesquisas em Temas de Ciências da Saúde (2023).",
-        link: "https://editorascience.com.br/livros/ebook0041"
+        nome: "A segurança dos alimentos nos bancos de alimentos brasileiros. In: Ednilson Sergio Ramalho de Souza. (Org.). Pesquisas em Temas de Ciências da Saúde.",
+        link: "https://dx.doi.org/10.46898/rfb.%20%20acd749f9-a0a8-4211-874a-d1000c2690f9"
       },
       {
         tipo: "Capítulos de livros publicados",
         nome: "AVALIAÇÃO E ADAPTAÇÃO DA ESTRUTURA FÍSICA DE UM BANCO DE ALIMENTOS: CAMINHOS PARA A SEGURANÇA ALIMENTAR E NUTRICIONAL. NUTRIÇÃO CLÍNICA METABÓLICA E ESPORTIVA (2022).",
-        link: "https://editorascience.com.br/livros/ebook0041"
+        link: "https://editorascience.com.br/livros/ebook0014/"
       },
       {
         tipo: "Capítulos de livros publicados",
         nome: "Segurança Alimentar e Nutricional. Perspectivas da Saúde Coletiva. Perspectivas da saúde coletiva no Vale do Jequitinhonha: temas, debates e reflexões (2020).",
-        link: "https://aedetora.com.br/produto/perspectivas-da-saude-coletiva-no-vale-do-jequitinhonha-temas-debates-e-reflexoes/"
+        link: "https://aeditora.com.br/produto/perspectivas-da-saude-coletiva-no-vale-do-jequitinhonha-temas-debates-e-reflexoes/"
       },
       {
         tipo: "Produção técnica",
@@ -154,7 +154,7 @@ const colaboradores = [
       {
         tipo: "Dissertação",
         nome: "Análise instrumental da situação dos Bancos de Alimentos de Minas Gerais",
-        link: "https://repositorio.ufjm.edu.br/items/22c04d70-5f6d-4a39-ab5f-71b80e57e5e1"
+        link: "https://repositorio.ufvjm.edu.br/items/22c04d70-5f6d-4a39-abf5-71b80e57e5e1"
       },
       {
         tipo: "Tese - Destaque",
@@ -169,47 +169,67 @@ const colaboradores = [
     materiais: [
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "A fome e a raiva (e o vírus): lições dos home - reflexões sobre participação social em tempos de Covid-19",
-        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+        nome: "A fome e a raiva (e o vírus) é coisas dos home”: reflexões sobre participação social em tempos de Covid-19",
+        link: "https://www.scielo.br/j/rn/a/7h6qDhWr9q88d34kSGq7Dkf/?lang=en"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "Restaurantes Populares: resistência, avaliação e mediação de segurança alimentar e nutricional",
-        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+        nome: "Restaurantes populares brasileiros: avaliação no âmbito da segurança alimentar e nutricional",
+        link: "https://www.scielo.br/j/rn/a/6bNVNqPB7szGJ6NQpnb7DYx/?lang=en"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "Restaurantes Populares: avaliação da implementação do Direito Humano à Alimentação Adequada: proposição de um modelo avaliativo",
-        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+        nome: "Restaurantes Populares enquanto promotores da realização do Direito Humano à Alimentação Adequada: proposição de um modelo avaliativo",
+        link: "https://www.scielo.br/j/rn/a/WSyRPMspZRRGK5qQ53YsMjd/?lang=en"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Restaurantes populares brasileiros: avaliação no âmbito da segurança alimentar e nutricional",
+        link: "https://www.scielo.br/j/rn/a/6bNVNqPB7szGJ6NQpnb7DYx/?lang=en"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
         nome: "Medição de trabalho do nutricionista: 80 anos de história da segurança alimentar e nutricional",
-        link: "https://www.scielo.br/j/rn/a/7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+        link: "https://www.scielo.br/j/rn/a/F5hBFWDCgrkdg6YJRpQNLdS/?lang=en"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Documento técnico contendo revisão teórica sobre os Equipamentos Públicos de Segurança Alimentar e Nutricional",
+        link: "https://www.scielo.br/j/rn/a/CLRSgm46rJnDwdFkMVhDwkk/?lang=en"
       },
       {
         tipo: "Produção técnica",
-        nome: "Documento técnico contendo resultados técnicos sobre a situação das Cozinhas Comunitárias e Restaurantes Populares mantidos pelo poder público no Brasil.",
+        nome: "Documento técnico contendo metodologia a ser utilizada para diagnóstico e caracterização dos Equipamentos Públicos de Segurança Alimentar e Nutricional",
         link: ""
       },
       {
         tipo: "Produção técnica",
-        nome: "Documento técnico contendo resultados de diagnóstico e caracterização dos Equipamentos Públicos de Segurança Alimentar e Nutricional",
+        nome: "Documento técnico contendo mapeamento atualizado e resultados preliminares de diagnóstico e caracterização dos Equipamentos Públicos de Segurança Alimentar e Nutricional",
         link: ""
       },
       {
         tipo: "Produção técnica",
-        nome: "Documento técnico contendo resultados de coleta de dados sobre a gestão financeira das Cozinhas Comunitárias e Restaurantes Populares no Brasil",
+        nome: "Documento técnico contendo análise do funcionamento das Cozinhas Comunitárias e Restaurantes Populares mantidos pelo poder público no Brasil.",
         link: ""
       },
       {
         tipo: "Produção técnica",
-        nome: "Documento técnico contendo resultados de estratégias de sustentabilidade financeira com gestores de Cozinhas Comunitárias e Restaurantes Populares",
+        nome: "Documento técnico contendo análise do funcionamento das Cozinhas Comunitárias e Restaurantes Populares mantidos pelo poder público no Brasil.",
         link: ""
       },
       {
         tipo: "Produção técnica",
-        nome: "Documento Técnico contendo Proposta de sustentabilidade financeira e estratégias de comercialização baseadas na alimentação adequada e saudável nas Cozinhas Comunitárias e Restaurantes Populares",
+        nome: "Documento técnico contendo estudos de caso sobre a gestão financeira das Cozinhas Comunitárias e Restaurantes Populares no Brasil",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento técnico contendo subsídios para discussão de estratégias de sustentabilidade financeira com gestores de Cozinhas Comunitárias e Restaurantes Populares",
+        link: ""
+      },
+      {
+        tipo: "Produção técnica",
+        nome: "Documento Técnico contendo Propostas de sustentabilidade financeira e estratégias de comercialização baseadas na alimentação adequada e saudável nas Cozinhas Comunitárias e Restaurantes Populares.",
         link: ""
       }
     ]
@@ -220,87 +240,92 @@ const colaboradores = [
     materiais: [
       {
         tipo: "Artigo",
-        nome: "Recorte público na agenda brasileira da Segurança Alimentar e Nutricional de 2000 a 2022",
-        link: "https://teses.usp.br/teses/disponiveis/42/42136/tde-02012023-094542/"
+        nome: "Recurso público na agenda brasileira da Segurança Alimentar e Nutricional de 2000 a 2022",
+        link: "https://revistas.usp.br/rsp/article/view/232757"
       },
       {
         tipo: "Artigo",
         nome: "SEGURANÇA ALIMENTAR E NUTRICIONAL: UMA ANÁLISE SOBRE O ARCABOUÇO LEGISLATIVO DOS ESTADOS BRASILEIROS",
-        link: "https://seer.ufr.br/index.php/seguranca/article/view/7524"
+        link: "https://seer.ufu.br/index.php/hygeia/article/view/72542"
       },
       {
         tipo: "Artigo",
-        nome: "Governança participativa de segurança alimentar no Brasil: Interesses e prioridades dentro da redemocratização até o desmantelamento multinacional",
-        link: "https://www.scielo.br/j/rn/a/5b3f9b7f7b7f7f7f7f7f7f7f7f7f7f7f7f7f7f7/?lang=en"
+        nome: "Construcción participativa de la agenda de seguridad alimentaria en Brasil: Intereses y prioridades desde la redemocratización hasta el desmantelamiento institucional",
+        link: "https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0717-75182023000100027&lng=en&nrm=iso&tlng=en"
       },
       {
         tipo: "Artigo",
-        nome: "Popular Restaurants: strategies to fight hunger and to promote Food and Nutrition Security: an integrative review of scientific publications in the period 2011-2021",
-        link: "https://www.scielo.br/j/rn/a/9b7b9b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+        nome: "Popular Restaurants as strategies to fight hunger and to promote Food and Nutrition Security: an integrative review of scientific publications in the period 2011-2021",
+        link: "https://www.scielo.br/j/rn/a/S79Dh97RVYntNRTtVjBSSjS/?lang=en"
       },
       {
         tipo: "Artigo",
-        nome: "Sistema Nacional de Segurança Alimentar e Nutricional: quais são os semelhantes no processo de descentralização?",
-        link: "https://www.scielo.br/j/rn/a/9b7b9b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+        nome: "Sistema Nacional de Segurança Alimentar e Nutricional: quais são as semelhanças no processo de descentralização?",
+        link: "https://www.scielo.br/j/csp/a/M9zb7YYHYNHyHGVjF87wb6z/?lang=en"
       },
       {
         tipo: "Artigo",
-        nome: "Entre a escassez e a fome: o diagnóstico de segurança alimentar e nutricional nas capitais do Sul do Brasil",
-        link: "https://www.scielo.br/j/rn/a/9b7b9b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+        nome: "Entre a riqueza e a fome: condições para a promoção da segurança alimentar e nutricional nas capitais do Sul do Brasil",
+        link: "https://www.scielo.br/j/rn/a/xdD7bvF3WtNhvgMCyVrD7Mz/?lang=en"
       },
       {
         tipo: "Artigo",
-        nome: "A experiência de Santa Catarina: desafios e perspectivas em pandemia e políticas públicas",
-        link: "https://sig.scielo.br/index.php/seguranca/article/view/1669"
+        nome: "Fome no estado de Santa Catarina: evolução, raízes e perspectivas em período de múltiplas crises",
+        link: "https://ojs.sites.ufsc.br/index.php/revistanecat/article/view/5609"
       },
       {
         tipo: "Artigo",
-        nome: "Descentralização normativa da segurança alimentar e nutricional: estudo descritivo das legislações publicadas nas capitais brasileiras",
-        link: "https://www.scielo.br/j/rn/a/9b7b9b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+        nome: "Descentralização normativa da agenda de segurança alimentar e nutricional: estudo descritivo das legislações publicadas nas capitais brasileiras",
+        link: "https://www.scielo.br/j/rn/a/FTmNK6SV7fTr98ZZPDpyLMx/?lang=en"
       },
       {
         tipo: "Artigo",
-        nome: "A situação de segurança alimentar e nutricional nas capitais brasileiras: resultados de uma avaliação de múltiplas dimensões",
-        link: "https://www.scielo.br/j/rn/a/9b7b9b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+        nome: "Qual a situação de segurança alimentar e nutricional dos municípios catarinenses? Resultados de uma avaliação de múltiplas dimensões",
+        link: "https://www.scielo.br/j/rn/a/SGCqS3dwxdW9Rwt84jfSgSz/?lang=en"
       },
       {
         tipo: "Artigo",
-        nome: "Adequação normativa da segurança alimentar e nutricional no Brasil",
-        link: "https://www.scielo.br/j/rn/a/9b7b9b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7/?lang=en"
+        nome: "Adequação normativa dos planos estaduais de segurança alimentar e nutricional no Brasil",
+        link: "https://www.scielo.br/j/csp/a/G8KS3cCv6c6hgmcpqGSm8fd/?lang=pt"
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina realizada em Blumenau/SC",
+        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina realizada em Blumenau/SC.",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Serrana/SC",
+        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Serrana/SC.",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Oeste/SC",
+        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Oeste/SC.",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Meio Oeste/SC",
+        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Meio Oeste/SC.",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Relatório de Monitoramento do Fortalecimento do SISAN em Santa Catarina",
+        nome: "Oficinas Regionais de Fortalecimento do SISAN no Estado de Santa Catarina: Relatório Geral.",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Caderno II. Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Sul/SC",
+        nome: "Relatório de, Monitoramento e Avaliação do Plano Estadual de Segurança Alimentar e Nutricional de Santa Catarina",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Conhecimentos e Saberes em Segurança Alimentar e Nutricional: documento base das oficinas de fortalecimento do SISAN em SC e RS",
+        nome: "Caderno II: Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Sul/SC.",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Conhecimentos e Saberes em Segurança Alimentar e Nutricional: documento base das oficinas de fortalecimento do SISAN em SC e RS.",
         link: ""
       }
     ]
@@ -375,6 +400,18 @@ const colaboradores = [
 
 const Colaboradores = () => {
   const [selectedColaborador, setSelectedColaborador] = useState<number | null>(null);
+  const [animating, setAnimating] = useState(false);
+  const [lastColaborador, setLastColaborador] = useState<number | null>(null);
+
+  const handleSelect = (idx: number) => {
+    if (selectedColaborador === idx) return;
+    setAnimating(true);
+    setLastColaborador(selectedColaborador);
+    setTimeout(() => {
+      setSelectedColaborador(idx);
+      setAnimating(false);
+    }, 250); // duração da animação de saída
+  };
 
   return (
     <div className="min-h-screen">
@@ -413,12 +450,15 @@ const Colaboradores = () => {
                       <Button
                         key={idx}
                         variant={selectedColaborador === idx ? "default" : "ghost"}
-                        className={`w-full justify-start ${
+                        className={`w-full justify-start transition-all duration-200 ${
                           selectedColaborador === idx
-                            ? "bg-notria-primary text-white"
+                            ? "bg-notria-primary text-white scale-105 shadow-lg"
                             : "hover:bg-notria-primary/10"
                         }`}
-                        onClick={() => setSelectedColaborador(idx)}
+                        onClick={() => handleSelect(idx)}
+                        style={{
+                          transition: 'all 0.2s cubic-bezier(.4,0,.2,1)',
+                        }}
                       >
                         <User size={16} className="mr-2" />
                         {colaborador.nome}
@@ -430,66 +470,75 @@ const Colaboradores = () => {
             </div>
 
             {/* Colaborador Details */}
-            <div className="flex-1">
+            <div className="flex-1 min-h-[400px] flex items-center">
               {selectedColaborador === null ? (
-                <Card className="h-full flex items-center justify-center p-8">
+                <Card className="h-full flex items-center justify-center p-8 w-full">
                   <div className="text-center text-gray-500">
                     <User size={48} className="mx-auto mb-4" />
                     <p className="text-lg">Selecione um colaborador para ver seus detalhes</p>
                   </div>
                 </Card>
               ) : (
-                <Card className="h-full">
-                  <CardHeader className="flex flex-col items-center">
-                    {colaboradores[selectedColaborador].image && (
-                      <img
-                        src={colaboradores[selectedColaborador].image}
-                        alt={colaboradores[selectedColaborador].nome}
-                        className="w-48 h-48 object-cover rounded-full mb-4 border-4 border-notria-primary"
-                      />
-                    )}
-                    <CardTitle className="font-poppins text-notria-primary text-2xl">
-                      {colaboradores[selectedColaborador].nome}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="mb-6">
-                      <h4 className="font-poppins font-semibold text-notria-primary mb-3 flex items-center gap-2">
-                        <BookOpen size={20} />
-                        Materiais
-                      </h4>
-                      {colaboradores[selectedColaborador].materiais.length === 0 ? (
-                        <p className="text-gray-500 text-center">Nenhum material publicado até o momento.</p>
-                      ) : (
-                        <div className="space-y-4">
-                          {colaboradores[selectedColaborador].materiais.map((material, index) => (
-                            <div key={index} className="border-l-4 border-notria-secondary pl-4">
-                              <h5 className="font-medium text-notria-primary mb-1">
-                                {material.tipo}
-                              </h5>
-                              <p className="text-gray-600 mb-2">
-                                {material.nome}
-                              </p>
-                              {material.link && (
-                                <Button
-                                  variant="ghost"
-                                  size="sm"
-                                  className="text-notria-secondary hover:text-notria-secondary/80 p-0 h-auto"
-                                  asChild
-                                >
-                                  <a href={material.link} target="_blank" rel="noopener noreferrer">
-                                    <ExternalLink size={14} className="mr-1" />
-                                    Acessar material
-                                  </a>
-                                </Button>
-                              )}
-                            </div>
-                          ))}
-                        </div>
+                <div className={`w-full transition-all duration-300 ${animating ? 'opacity-0 translate-y-4 pointer-events-none' : 'opacity-100 translate-y-0'}`}>
+                  <Card className="h-full">
+                    <CardHeader className="flex flex-col items-center">
+                      {colaboradores[selectedColaborador].image && (
+                        <img
+                          src={colaboradores[selectedColaborador].image}
+                          alt={colaboradores[selectedColaborador].nome}
+                          className="w-48 h-48 object-cover rounded-full mb-4 border-4 border-notria-primary"
+                        />
                       )}
-                    </div>
-                  </CardContent>
-                </Card>
+                      <CardTitle className="font-poppins text-notria-primary text-2xl">
+                        {colaboradores[selectedColaborador].nome}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="mb-6">
+                        <h4 className="font-poppins font-semibold text-notria-primary mb-3 flex items-center gap-2">
+                          <BookOpen size={20} />
+                          Materiais
+                        </h4>
+                        {colaboradores[selectedColaborador].materiais.length === 0 ? (
+                          <p className="text-gray-500 text-center">Nenhum material publicado até o momento.</p>
+                        ) : (
+                          <div className="space-y-4">
+                            {colaboradores[selectedColaborador].materiais.map((material, index) => (
+                              <div
+                                key={index}
+                                className={`border-l-4 border-notria-secondary pl-4 animate-slide-up`}
+                                style={{
+                                  animationDelay: `${index * 80}ms`,
+                                  animationFillMode: 'forwards',
+                                }}
+                              >
+                                <h5 className="font-medium text-notria-primary mb-1">
+                                  {material.tipo}
+                                </h5>
+                                <p className="text-gray-600 mb-2">
+                                  {material.nome}
+                                </p>
+                                {material.link && (
+                                  <Button
+                                    variant="ghost"
+                                    size="sm"
+                                    className="text-notria-secondary hover:text-notria-secondary/80 p-0 h-auto"
+                                    asChild
+                                  >
+                                    <a href={material.link} target="_blank" rel="noopener noreferrer">
+                                      <ExternalLink size={14} className="mr-1" />
+                                      Acessar material
+                                    </a>
+                                  </Button>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
               )}
             </div>
           </div>

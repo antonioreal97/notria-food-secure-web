@@ -54,10 +54,10 @@ const Team = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection animation="slide-up" delay={200}>
-            <div className="text-center mb-16">
-              <h2 className="font-poppins font-bold text-4xl md:text-5xl text-notria-primary mb-6">
-                Nossa Equipe
-              </h2>
+          <div className="text-center mb-16">
+            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-notria-primary mb-6">
+              Nossa Equipe
+            </h2>
             </div>
           </AnimatedSection>
           
