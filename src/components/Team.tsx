@@ -55,7 +55,7 @@ const Team = () => {
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <AnimatedSection animation="slide-up" delay={isMobile ? 100 : 200} duration={isMobile ? 300 : 500}>
+          <AnimatedSection {...(!isMobile ? {animation: 'slide-up', delay: 200, duration: 500} : {})}>
             <div className="text-center mb-16">
               <h2 className="font-poppins font-bold text-4xl md:text-5xl text-notria-primary mb-6">
                 Nossa Equipe
@@ -67,9 +67,11 @@ const Team = () => {
             {teamMembers.map((member, idx) => (
               <AnimatedSection 
                 key={idx} 
-                animation="scale-in" 
-                delay={isMobile ? 100 + (idx * 30) : 400 + (idx * 150)}
-                duration={isMobile ? 300 : 500}
+                {...(!isMobile ? {
+                  animation: 'scale-in',
+                  delay: 400 + (idx * 150),
+                  duration: 500
+                } : {})}
                 className="bg-notria-light p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group"
               >
                 <img src={member.image} alt={member.name} className="w-32 h-32 object-cover rounded-full mb-4 border-4 border-notria-primary group-hover:border-notria-secondary transition-colors duration-300" />

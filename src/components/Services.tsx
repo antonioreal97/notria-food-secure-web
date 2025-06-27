@@ -1,5 +1,6 @@
 import { CheckCircle, Users, FileText, BookOpen, Handshake, Search } from "lucide-react";
 import { AnimatedSection } from "@/components/ui/animated-section";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 
 const Services = () => {
   const services = [
@@ -35,6 +36,8 @@ const Services = () => {
     }
   ];
 
+  const isMobile = useIsMobile();
+
   return (
     <section id="servicos" className="py-20 relative bg-white">
       {/* Imagem de fundo */}
@@ -48,7 +51,7 @@ const Services = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <AnimatedSection animation="slide-up" delay={200}>
+          <AnimatedSection {...(!isMobile ? {animation: 'slide-up', delay: 200, duration: 500} : {})}>
             <div className="text-center mb-16">
               <h2 className="font-poppins font-bold text-4xl md:text-5xl text-white mb-6">
                 Nossos Serviços
@@ -64,8 +67,7 @@ const Services = () => {
             {services.map((service, index) => (
               <AnimatedSection 
                 key={index} 
-                animation="slide-up" 
-                delay={400 + (index * 200)}
+                {...(!isMobile ? {animation: 'slide-up', delay: 400 + (index * 200), duration: 500} : {})}
                 className="bg-white/70 backdrop-blur-md p-8 rounded-xl hover:shadow-lg transition-shadow group border border-notria-light"
               >
                 <div className="bg-notria-primary w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-notria-secondary transition-colors">
