@@ -12,13 +12,13 @@ const colaboradores = [
     image: "/assets/team1.png",
     materiais: [
       {
-        tipo: "Artigo",
-        nome: "Bancos de alimentos brasileiros: como avaliá-los? (2024).",
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Bancos de alimentos brasileiros: como avaliá-los? (2024)",
         link: "https://www.scielo.br/j/csc/a/JrkmcTBnRhgVKgNKcPk65MH/"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "A lógica da intervenção e dos indicadores de monitoramento e avaliação de bancos de alimentos brasileiros (2023).",
+        nome: "A lógica da intervenção e os indicadores de monitoramento e avaliação de bancos de alimentos brasileiros (2023)",
         link: "https://dx.doi.org/10.9771/ns.v14i26.51056"
       },
       {
@@ -33,122 +33,122 @@ const colaboradores = [
       },
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "Avaliação dos Bancos de Alimentos de Minas Gerais no combate às perdas e desperdícios de alimentos (2021).",
+        nome: "Avaliação dos bancos de alimentos: uma revisão integrativa da literatura nacional (2021)",
         link: "https://dx.doi.org/10.20396/san.v28i00.%208665406"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "A eficácia dos Bancos de Alimentos de Minas Gerais no combate às perdas e desperdícios de alimentos (2017).",
+        nome: "A eficácia dos Bancos de Alimentos de Minas Gerais no combate às perdas e desperdícios de alimentos (2017)",
         link: "https://periodicos.sbu.unicamp.br/ojs/index.php/san/article/view/8649720"
       },
       {
-        tipo: "Livros publicados/organizados ou edições",
-        nome: "Perspectivas da saúde coletiva no Vale do Jequitinhonha: temas, debates e reflexões (2021).",
+        tipo: "Livros publicados",
+        nome: "Perspectivas da saúde coletiva no Vale do Jequitinhonha: temas, debates e reflexões (2021)",
         link: ""
       },
       {
         tipo: "Capítulos de livros publicados",
-        nome: "A segurança dos alimentos nos bancos de alimentos brasileiros. In: Ednilson Sergio Ramalho de Souza. (Org.). Pesquisas em Temas de Ciências da Saúde.",
+        nome: "A segurança dos alimentos nos bancos de alimentos brasileiros. In: Ednilson Sergio Ramalho de Souza. (Org.). Pesquisas em Temas de Ciências da Saúde (2023)",
         link: "https://dx.doi.org/10.46898/rfb.%20%20acd749f9-a0a8-4211-874a-d1000c2690f9"
       },
       {
         tipo: "Capítulos de livros publicados",
-        nome: "AVALIAÇÃO E ADAPTAÇÃO DA ESTRUTURA FÍSICA DE UM BANCO DE ALIMENTOS: CAMINHOS PARA A SEGURANÇA ALIMENTAR E NUTRICIONAL. NUTRIÇÃO CLÍNICA METABÓLICA E ESPORTIVA (2022).",
+        nome: "AVALIAÇÃO E ADAPTAÇÃO DA ESTRUTURA FÍSICA DE UM BANCO DE ALIMENTOS: CAMINHOS PARA A SEGURANÇA ALIMENTAR E NUTRICIONAL. NUTRIÇÃO CLÍNICA METABÓLICA E ESPORTIVA (2022)",
         link: "https://editorascience.com.br/livros/ebook0014/"
       },
       {
         tipo: "Capítulos de livros publicados",
-        nome: "Segurança Alimentar e Nutricional. Perspectivas da Saúde Coletiva. Perspectivas da saúde coletiva no Vale do Jequitinhonha: temas, debates e reflexões (2020).",
+        nome: "Segurança Alimentar e Nutricional para a Promoção e a Proteção da Saúde Coletiva. Perspectivas da saúde coletiva no Vale do Jequitinhonha: temas, debates e reflexões (2020)",
         link: "https://aeditora.com.br/produto/perspectivas-da-saude-coletiva-no-vale-do-jequitinhonha-temas-debates-e-reflexoes/"
       },
       {
-        tipo: "Produção técnica",
-        nome: "Matriz de Fortalecimento da Rede Mesa Brasil Sesc (2020).",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo proposta de alinhamento de conceitos e processos no âmbito da Rede Brasileira de Bancos de Alimentos (2019).",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo proposta de revisão e atualização dos materiais educativos para os bancos de alimentos da Rede Brasileira de Bancos de Alimentos (Guia para Boas Práticas para Bancos de Alimentos) (2018).",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo subsídios para a Carta de Princípios do Comitê Gestor com vistas a subsidiar as negociações estratégicas com agentes externos à Rede Brasileira de Bancos de Alimentos (2018).",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo proposta de metodologia para o monitoramento das ações previstas na 'Estratégia Intersetorial de Prevenção e Controle da Obesidade', incluindo a elaboração de instrumento(s) por eixo e forma de aplicação no âmbito das CAISANs estaduais (2017).",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo análise e avaliação das ações de prevenção e controle da obesidade implantadas no âmbito estadual, com descrição das ações que se destacam e recomendações de aprimoramento (2017).",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo proposta de conteúdo para elaboração de material de sensibilização, incentivo e aperfeiçoamento das ações de prevenção e controle da obesidade, bem como as etapas metodológicas para mobilização das CAISANs estaduais (2017).",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento técnico contendo proposta de metodologia para o monitoramento das ações previstas na 'Estratégia Intersetorial de Prevenção e Controle da Obesidade', incluindo a elaboração de instrumento(s) por eixo e forma de aplicação no âmbito das CAISANs estaduais (2017).",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo proposta de material e ações para o fomento e incentivo às ações de Educação Alimentar e Promoção da Alimentação Adequada e Saudável (2017).",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico com sistematização da necessidade dos estados e municípios no que se refere à realização de ações de Educação Alimentar e Nutricional e Promoção da Alimentação Adequada e Saudável (2015).",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo proposta metodológica para o fomento e incentivo à realização de ações de Educação Alimentar e Promoção da Alimentação Adequada e Saudável nos estados e municípios por meio das Câmaras Intersetoriais de Segurança Alimentar e Nutricional Estatuais (2015).",
-        link: ""
-      },
-      {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo plano de ação voltado aos municípios para o fomento de ações de Educação Alimentar e Promoção da Alimentação Adequada e Saudável (2014).",
+        tipo: "Trabalhos técnicos",
+        nome: "Matriz de Fortalecimento da Rede Mesa Brasil Sesc (2020)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Relatório Técnico-Científico - Avaliação Nacional de Bancos de Alimentos (2022).",
+        nome: "Documento Técnico contendo proposta de alinhamento de conceitos e processos no âmbito da Rede Brasileira de Bancos de Alimentos (2019)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Relatório Final - Avaliação Nacional de Bancos de Alimentos (2021).",
+        nome: "Documento Técnico contendo proposta de revisão e atualização dos materiais educativos para os bancos de alimentos da Rede Brasileira de Bancos de Alimentos (Guia para Boas Práticas para Bancos de Alimentos) (2018)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Relatório Preliminar - Avaliação Nacional de Bancos de Alimentos (2020).",
+        nome: "Documento Técnico contendo subsídios para a Carta de Princípios do Comitê Gestor com vistas a subsidiar as negociações estratégicas com agentes externos à Rede Brasileira de Bancos de Alimentos (2018)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Relatório Preliminar - Avaliação Nacional de Bancos de Alimentos (2019).",
+        nome: "Documento Técnico contendo proposta de metodologia para o monitoramento das ações previstas na 'Estratégia Intersetorial de Prevenção e Controle da Obesidade', incluindo a elaboração de instrumento(s) por eixo e forma de aplicação no âmbito das CAISANs estaduais (2017)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Folder - Doadores Parceiros de Bancos de Alimentos (2019).",
+        nome: "Documento Técnico contendo análise e avaliação das ações de prevenção e controle da obesidade implantadas no âmbito estadual, com descrição das ações que se destacam e recomendações de aprimoramento (2017)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Mapa Operacional para Bancos de Alimentos (2019).",
+        nome: "Documento Técnico contendo proposta de conteúdo para elaboração de material de sensibilização, incentivo e aperfeiçoamento das ações de prevenção e controle da obesidade, bem como as etapas metodológicas para mobilização das CAISANs estaduais (2017)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Documento técnico contendo proposta de metodologia para o monitoramento das ações previstas na 'Estratégia Intersetorial de Prevenção e Controle da Obesidade', incluindo a elaboração de instrumento(s) por eixo e forma de aplicação no âmbito das CAISANs estaduais (2017)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Documento Técnico contendo proposta de material e ações para o fomento e incentivo às ações de Educação Alimentar e Promoção da Alimentação Adequada e Saudável (2017)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Documento Técnico com sistematização da necessidade dos estados e municípios no que se refere à realização de ações de Educação Alimentar e Nutricional e Promoção da Alimentação Adequada e Saudável (2015)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Documento Técnico contendo proposta metodológica para o fomento e incentivo à realização de ações de Educação Alimentar e Promoção da Alimentação Adequada e Saudável nos estados e municípios por meio das Câmaras Intersetoriais de Segurança Alimentar e Nutricional Estaduais (2015)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Documento Técnico contendo plano de ação voltado aos municípios para o fomento de ações de Educação Alimentar e Promoção da Alimentação Adequada e Saudável (2014)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Relatório Técnico-Científico - Avaliação Nacional de Bancos de Alimentos (2022)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Relatório Final - Avaliação Nacional de Bancos de Alimentos (2021)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Relatório Preliminar - Avaliação Nacional de Bancos de Alimentos (2020)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Relatório Preliminar - Avaliação Nacional de Bancos de Alimentos (2019)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Folder - Doadores Parceiros de Bancos de Alimentos (2019)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Mapa Operacional para Bancos de Alimentos (2019)",
         link: ""
       },
       {
@@ -158,7 +158,12 @@ const colaboradores = [
       },
       {
         tipo: "Tese - Destaque",
-        nome: "BANCOS DE ALIMENTOS BRASILEIROS: Contribuições para a Segurança Alimentar e Nutricional. Redução de Perdas e Desperdícios de Alimentos e Educação Alimentar e Nutricional",
+        nome: "BANCOS DE ALIMENTOS BRASILEIROS: Contribuições para a Segurança Alimentar e Nutricional, Redução de Perdas e Desperdícios de Alimentos e Educação Alimentar e Nutricional (2024)",
+        link: ""
+      },
+      {
+        tipo: "Destaque",
+        nome: "Menção Honrosa pela apresentação na III Semana de Integração Ensino, Pesquisa e Extensão, Universidade Federal dos Vales do Jequitinhonha e Mucuri",
         link: ""
       }
     ]
@@ -169,67 +174,77 @@ const colaboradores = [
     materiais: [
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "A fome e a raiva (e o vírus) é coisas dos home”: reflexões sobre participação social em tempos de Covid-19",
+        nome: "A fome e a raiva (e o vírus) é coisas dos home\": reflexões sobre participação social em tempos de Covid-19 (2021)",
         link: "https://www.scielo.br/j/rn/a/7h6qDhWr9q88d34kSGq7Dkf/?lang=en"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "Restaurantes populares brasileiros: avaliação no âmbito da segurança alimentar e nutricional",
+        nome: "Restaurantes populares brasileiros: avaliação no âmbito da segurança alimentar e nutricional (2020)",
         link: "https://www.scielo.br/j/rn/a/6bNVNqPB7szGJ6NQpnb7DYx/?lang=en"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "Restaurantes Populares enquanto promotores da realização do Direito Humano à Alimentação Adequada: proposição de um modelo avaliativo",
+        nome: "Restaurantes Populares enquanto promotores da realização do Direito Humano à Alimentação Adequada: proposição de um modelo avaliativo (2019)",
         link: "https://www.scielo.br/j/rn/a/WSyRPMspZRRGK5qQ53YsMjd/?lang=en"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "Restaurantes populares brasileiros: avaliação no âmbito da segurança alimentar e nutricional",
+        nome: "Restaurantes populares brasileiros: avaliação no âmbito da segurança alimentar e nutricional (2020)",
         link: "https://www.scielo.br/j/rn/a/6bNVNqPB7szGJ6NQpnb7DYx/?lang=en"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "Medição de trabalho do nutricionista: 80 anos de história da segurança alimentar e nutricional",
+        nome: "Mercado de trabalho do nutricionista: 80 anos de história (2019)",
         link: "https://www.scielo.br/j/rn/a/F5hBFWDCgrkdg6YJRpQNLdS/?lang=en"
       },
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "Documento técnico contendo revisão teórica sobre os Equipamentos Públicos de Segurança Alimentar e Nutricional",
+        nome: "Revisão teórica sobre os Equipamentos Públicos de Segurança Alimentar e Nutricional (2018)",
         link: "https://www.scielo.br/j/rn/a/CLRSgm46rJnDwdFkMVhDwkk/?lang=en"
       },
       {
-        tipo: "Produção técnica",
-        nome: "Documento técnico contendo metodologia a ser utilizada para diagnóstico e caracterização dos Equipamentos Públicos de Segurança Alimentar e Nutricional",
+        tipo: "TESE Destaque",
+        nome: "Restaurantes Populares e Segurança Alimentar e Nutricional nas capitais brasileiras: estudo de avaliação e de associação com características contextuais",
         link: ""
       },
       {
-        tipo: "Produção técnica",
-        nome: "Documento técnico contendo mapeamento atualizado e resultados preliminares de diagnóstico e caracterização dos Equipamentos Públicos de Segurança Alimentar e Nutricional",
+        tipo: "Livro publicado",
+        nome: "Ações intersetoriais na prevenção e controle do sobrepeso e obesidade (2020)",
         link: ""
       },
       {
-        tipo: "Produção técnica",
-        nome: "Documento técnico contendo análise do funcionamento das Cozinhas Comunitárias e Restaurantes Populares mantidos pelo poder público no Brasil.",
+        tipo: "Trabalhos técnicos",
+        nome: "Documento técnico contendo metodologia a ser utilizada para diagnóstico e caracterização dos Equipamentos Públicos de Segurança Alimentar e Nutricional (2024)",
         link: ""
       },
       {
-        tipo: "Produção técnica",
-        nome: "Documento técnico contendo análise do funcionamento das Cozinhas Comunitárias e Restaurantes Populares mantidos pelo poder público no Brasil.",
+        tipo: "Trabalhos técnicos",
+        nome: "Documento técnico contendo mapeamento atualizado e resultados preliminares de diagnóstico e caracterização dos Equipamentos Públicos de Segurança Alimentar e Nutricional (2024)",
         link: ""
       },
       {
-        tipo: "Produção técnica",
-        nome: "Documento técnico contendo estudos de caso sobre a gestão financeira das Cozinhas Comunitárias e Restaurantes Populares no Brasil",
+        tipo: "Trabalhos técnicos",
+        nome: "Documento técnico contendo análise do funcionamento das Cozinhas Comunitárias e Restaurantes Populares mantidos pelo poder público no Brasil (2023)",
         link: ""
       },
       {
-        tipo: "Produção técnica",
-        nome: "Documento técnico contendo subsídios para discussão de estratégias de sustentabilidade financeira com gestores de Cozinhas Comunitárias e Restaurantes Populares",
+        tipo: "Trabalhos técnicos",
+        nome: "Documento técnico contendo análise do funcionamento das Cozinhas Comunitárias e Restaurantes Populares mantidos pelo poder público no Brasil (2023)",
         link: ""
       },
       {
-        tipo: "Produção técnica",
-        nome: "Documento Técnico contendo Propostas de sustentabilidade financeira e estratégias de comercialização baseadas na alimentação adequada e saudável nas Cozinhas Comunitárias e Restaurantes Populares.",
+        tipo: "Trabalhos técnicos",
+        nome: "Documento técnico contendo estudos de caso sobre a gestão financeira das Cozinhas Comunitárias e Restaurantes Populares no Brasil (2023)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Documento técnico contendo subsídios para discussão de estratégias de sustentabilidade financeira com gestores de Cozinhas Comunitárias e Restaurantes Populares (2023)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Documento Técnico contendo Propostas de sustentabilidade financeira e estratégias de comercialização baseadas na alimentação adequada e saudável nas Cozinhas Comunitárias e Restaurantes Populares (2023)",
         link: ""
       }
     ]
@@ -239,93 +254,108 @@ const colaboradores = [
     image: "/assets/team3.png",
     materiais: [
       {
-        tipo: "Artigo",
-        nome: "Recurso público na agenda brasileira da Segurança Alimentar e Nutricional de 2000 a 2022",
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Recurso público na agenda brasileira da Segurança Alimentar e Nutricional de 2000 a 2022 (2024)",
         link: "https://revistas.usp.br/rsp/article/view/232757"
       },
       {
-        tipo: "Artigo",
-        nome: "SEGURANÇA ALIMENTAR E NUTRICIONAL: UMA ANÁLISE SOBRE O ARCABOUÇO LEGISLATIVO DOS ESTADOS BRASILEIROS",
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "SEGURANÇA ALIMENTAR E NUTRICIONAL: UMA ANÁLISE SOBRE O ARCABOUÇO LEGISLATIVO DOS ESTADOS BRASILEIROS (2025)",
         link: "https://seer.ufu.br/index.php/hygeia/article/view/72542"
       },
       {
-        tipo: "Artigo",
-        nome: "Construcción participativa de la agenda de seguridad alimentaria en Brasil: Intereses y prioridades desde la redemocratización hasta el desmantelamiento institucional",
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Construcción participativa de la agenda de seguridad alimentaria en Brasil: Intereses y prioridades desde la redemocratización hasta el desmantelamiento institucional (2023)",
         link: "https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0717-75182023000100027&lng=en&nrm=iso&tlng=en"
       },
       {
-        tipo: "Artigo",
-        nome: "Popular Restaurants as strategies to fight hunger and to promote Food and Nutrition Security: an integrative review of scientific publications in the period 2011-2021",
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Popular Restaurants as strategies to fight hunger and to promote Food and Nutrition Security: an integrative review of scientific publications in the period 2011-2021 (2023)",
         link: "https://www.scielo.br/j/rn/a/S79Dh97RVYntNRTtVjBSSjS/?lang=en"
       },
       {
-        tipo: "Artigo",
-        nome: "Sistema Nacional de Segurança Alimentar e Nutricional: quais são as semelhanças no processo de descentralização?",
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Sistema Nacional de Segurança Alimentar e Nutricional: quais são as semelhanças no processo de descentralização? (2023)",
         link: "https://www.scielo.br/j/csp/a/M9zb7YYHYNHyHGVjF87wb6z/?lang=en"
       },
       {
-        tipo: "Artigo",
-        nome: "Entre a riqueza e a fome: condições para a promoção da segurança alimentar e nutricional nas capitais do Sul do Brasil",
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Entre a riqueza e a fome: condições para a promoção da segurança alimentar e nutricional nas capitais do Sul do Brasil (2023)",
         link: "https://www.scielo.br/j/rn/a/xdD7bvF3WtNhvgMCyVrD7Mz/?lang=en"
       },
       {
-        tipo: "Artigo",
-        nome: "Fome no estado de Santa Catarina: evolução, raízes e perspectivas em período de múltiplas crises",
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Fome no estado de Santa Catarina: evolução, raízes e perspectivas em período de múltiplas crises (2022)",
         link: "https://ojs.sites.ufsc.br/index.php/revistanecat/article/view/5609"
       },
       {
-        tipo: "Artigo",
-        nome: "Descentralização normativa da agenda de segurança alimentar e nutricional: estudo descritivo das legislações publicadas nas capitais brasileiras",
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Descentralização normativa da agenda de segurança alimentar e nutricional: estudo descritivo das legislações publicadas nas capitais brasileiras (2022)",
         link: "https://www.scielo.br/j/rn/a/FTmNK6SV7fTr98ZZPDpyLMx/?lang=en"
       },
       {
-        tipo: "Artigo",
-        nome: "Qual a situação de segurança alimentar e nutricional dos municípios catarinenses? Resultados de uma avaliação de múltiplas dimensões",
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Qual a situação de segurança alimentar e nutricional dos municípios catarinenses? Resultados de uma avaliação de múltiplas dimensões (2020)",
         link: "https://www.scielo.br/j/rn/a/SGCqS3dwxdW9Rwt84jfSgSz/?lang=en"
       },
       {
-        tipo: "Artigo",
-        nome: "Adequação normativa dos planos estaduais de segurança alimentar e nutricional no Brasil",
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Adequação normativa dos planos estaduais de segurança alimentar e nutricional no Brasil (2028)",
         link: "https://www.scielo.br/j/csp/a/G8KS3cCv6c6hgmcpqGSm8fd/?lang=pt"
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina realizada em Blumenau/SC.",
+        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina realizada em Blumenau/SC (2017)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Serrana/SC.",
+        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Serrana/SC (2017)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Oeste/SC.",
+        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Oeste/SC (2017)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Meio Oeste/SC.",
+        nome: "Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Meio Oeste/SC (2017)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Oficinas Regionais de Fortalecimento do SISAN no Estado de Santa Catarina: Relatório Geral.",
+        nome: "Oficinas Regionais de Fortalecimento do SISAN no Estado de Santa Catarina: Relatório Geral (2017)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Relatório de, Monitoramento e Avaliação do Plano Estadual de Segurança Alimentar e Nutricional de Santa Catarina",
+        nome: "Relatório de Monitoramento e Avaliação do Plano Estadual de Segurança Alimentar e Nutricional de Santa Catarina (2017)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Caderno II: Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Sul/SC.",
+        nome: "Caderno II: Compartilhando de Saberes e Experiências em Segurança Alimentar e Nutricional - Oficina da Região Sul/SC (2017)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Conhecimentos e Saberes em Segurança Alimentar e Nutricional: documento base das oficinas de fortalecimento do SISAN em SC e RS.",
+        nome: "Conhecimentos e Saberes em Segurança Alimentar e Nutricional: documento base das oficinas de fortalecimento do SISAN em SC e RS (2017)",
+        link: ""
+      },
+      {
+        tipo: "Destaque",
+        nome: "4º Lugar no Concurso Multiplicando Experiências e Estratégias Sustentáveis de Alimentação e Nutrição do Brasil, Centro de Excelência contra a Fome do Programa Mundial de Alimentos das Nações Unidas",
+        link: ""
+      },
+      {
+        tipo: "TESE Destaque",
+        nome: "Tendências da Insegurança Alimentar e dos determinantes da Segurança Alimentar e Nutricional no Brasil e suas associações: um estudo ecológico de uma década",
+        link: ""
+      },
+      {
+        tipo: "Livro publicado",
+        nome: "O legado econômico e social da COVID-19 no Brasil e em Santa Catarina (2023)",
         link: ""
       }
     ]
@@ -336,52 +366,107 @@ const colaboradores = [
     materiais: [
       {
         tipo: "Capítulo de livro publicado",
-        nome: "Introdução à Ecologia Alimentar. In: Valmar Ziegler, Denise Zaffari. (Org.). Ecologia Alimentar Humana. 1ed. Curitiba: CRV Ltda., 2024, v. , p. 11-36.",
+        nome: "Introdução a Ecologia Alimentar. In: Valmor Ziegler; Denise Zaffari. (Org.). Ecologia Alimentar Humana (2024)",
         link: ""
       },
       {
         tipo: "Capítulo de livro publicado",
-        nome: "Práticas Alimentares. Cultura e mudanças alimentares. In: Valmar Ziegler, Denise Zaffari. (Org.). Ecologia Alimentar Humana. 1ed. Curitiba: CRV Ltda., 2024, v. , p. 37-68.",
+        nome: "Práticas Alimentares: Cultura e mudanças associadas. In: Valmor Ziegler; Denise Zaffari. (Org.). Ecologia Alimentar Humana (2024)",
         link: ""
       },
       {
-        tipo: "Capítulo de livro publicado",
-        nome: "PRÁTICAS... V. ZIEGLER-V., D. ZAFFARI, M. C. M. (Org.). Ecologia e Ecologia Alimentar Humana. 1ed. Curitiba: CRV Ltda., 2024, v. , p. 37-68.",
+        tipo: "Livro publicado",
+        nome: "A Saúde Mental em Evidência: Narrativas de um Caminho Utópico (2020)",
+        link: ""
+      },
+      {
+        tipo: "Livro publicado",
+        nome: "Temas emergentes das Ciências Sociais (2021)",
+        link: ""
+      },
+      {
+        tipo: "Livro publicado",
+        nome: "Mas, se a Gente é o que Come, Quem Não Come Nada Some! É por isso que Ninguém Enxerga essa Gente que Passa Fome (2021)",
         link: ""
       },
       {
         tipo: "Destaque",
-        nome: "Destaque Trabalho de Conclusão de Curso - Graduação em Nutrição, Universidade do Vale do Rio dos Sinos/UNISINOS",
+        nome: "1º lugar Área Saúde Coletiva: Intersetorialidade e Multidisciplinariedade: Uma Abordagem Integrativa em Educação Alimentar e Nutricional, VII Mostra Científica Luiz Santos Perry- UFRGS (2014)",
         link: ""
       },
       {
         tipo: "Destaque",
-        nome: "Destaque Destaque - A Cultura alimentar e os desafios de um Aprofundamento da Condição Social. II Simpósio Latino-Americano de Estudos em Cultura - SEMLACult",
+        nome: "Artigo Destaque- A Cultura Alimentar e os Reflexos de um Aprisionamento da Condição Social, II Seminário Latino-Americano de Estudos em Cultura - SEMLACult (2019)",
+        link: ""
+      },
+      {
+        tipo: "TESE Destaque",
+        nome: "CONSTRUÇÕES SOCIAIS, CIDADANIA E POPULAÇÃO EM SITUAÇÃO DE RUA NA CIDADE DE PORTO ALEGRE/RS: O modelo de cidadão gerado em uma política pública de superação da fome (Programa Restaurante Popular)",
         link: ""
       },
       {
         tipo: "Artigos completos publicados em periódicos",
-        nome: "A Cultura Alimentar e os Reflexos de um Aprofundamento da Condição Social",
-        link: "https://dx.doi.org/10.29369/av3n.v3i300.667645"
+        nome: "Segurança alimentar e nutricional no Brasil (2023)",
+        link: "http://dx.doi.org/10.20396/san.v30i00.8667645"
       },
       {
-        tipo: "Livros publicados/organizados ou edições",
-        nome: "Ciclo circular conjunto COMAÇÕES/ENSAIOS n°1/2020",
-        link: "https://periodicos.claec.org/index.php/arca/article/view/1483"
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "A Cultura Alimentar e os Reflexos de um Aprisionamento da Condição Social (2019)",
+        link: "https://periodicos.claec.org/index.php/relacult/article/view/1483"
       },
       {
-        tipo: "Trabalhos técnicos",
-        nome: "Projeto Per-Capita de Segurança Alimentar e Nutricional do município de São Leopoldo",
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Pelas ruas, o ecoar da fome transcende o direito à alimentação. REVISTA INTERDISCIPLINAR DE DIREITOS HUMANOS (2021)",
+        link: ""
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Dialogando alimentação e nutrição na saúde mental: Ações promotoras de saúde por meio de uma horta terapêutica. REVISTA DA ASSOCIAÇÃO BRASILEIRA DE NUTRIÇÃO (2018)",
+        link: ""
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Experimentação da Intersetorialidade na Nutrição: potencialidades de Novas Tecituras Vivenciais no Fazer Profissional. SAÚDE E DESENVOLVIMENTO HUMANO (2016)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Relatório de Propostas em Segurança Alimentar e Nutricional, Conferência Municipal de Segurança Alimentar e Nutricional de São Leopoldo",
+        nome: "Parecer de artigo científico Revista Segurança Alimentar e Nutricional (2023)",
         link: ""
       },
       {
         tipo: "Trabalhos técnicos",
-        nome: "Desenvolvimento de material didático ou instrucional: Segurança Alimentar das populações vulneráveis - Cuidados e Atenção às populações vulnerabilizadas",
+        nome: "Organização 8 Conferência Estadual de Soberania e Segurança Alimentar e Nutricional Sustentável do Rio Grande do Sul (2020)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Plano Estadual de Segurança Alimentar e Nutricional do Estado do Rio Grande do Sul (2019)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Projeto 3º Conferência Municipal de Segurança Alimentar e Nutricional no Município de São Leopoldo (2019)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Relatoria de Propostas em Segurança alimentar e nutricional, Conferência Municipal de Segurança Alimentar e Nutricional de São Leopoldo (2019)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Cartilha de orientações para doação de alimentos (2020)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Cartilha Segurança Alimentar das populações vulneráveis - Cuidado e Atenção as populações vulnerabilizadas (2020)",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Relatório LEVANTAMENTO DAS AÇÕES DE DISTRIBUIÇÃO DE ALIMENTOS NOS MUNICÍPIOS DO RS - COVID-19 (2020)",
         link: ""
       }
     ]
