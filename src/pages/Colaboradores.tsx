@@ -480,6 +480,42 @@ const colaboradores = [
     nome: "Antônio Real",
     image: "/assets/team6.png",
     materiais: [] // Sem materiais publicados
+  },
+  {
+    nome: "Eliana Rocha",
+    image: "/assets/team7.png",
+    materiais: [] // Sem materiais publicados
+  },
+  {
+    nome: "Ana Luiza Barros",
+    image: "/assets/team8.png",
+    materiais: [
+      {
+        tipo: "Capítulos de livros publicados",
+        nome: "Criança. In: Ramyne de Castro da Paz. (Org.). Manual de avaliação nutricional",
+        link: "https://revistajrg.com/index.php/portaljrg/article/view/193"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Escalas de funcionalidade e sintomas no manejo nutricional de pacientes em cuidados paliativos: revisão integrativa",
+        link: "https://ojs.revistacontemporanea.com/ojs/index.php/home/article/view/5100"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Cow's milk as an inflammatory factor, an exploratory study on the social network Instagram",
+        link: "https://sevenpubl.com.br/ISJHR/article/view/3125"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Validação do Mnemônico NUTRIFICO como Abordagem Nutricional e Comunicação de Notícias Difíceis em Cuidados Paliativos",
+        link: "https://rbc.inca.gov.br/index.php/revista/article/view/4415"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Hydroalcoholic extract of Brazilian green propolis modulates inflammatory process in mice submitted to a low protein diet",
+        link: "https://www.sciencedirect.com/science/article/pii/S0753332218341623?via%3Dihub"
+      }
+    ]
   }
 ];
 

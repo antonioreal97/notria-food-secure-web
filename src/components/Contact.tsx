@@ -203,7 +203,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="font-poppins font-medium text-notria-primary">E-mail</p>
-                        <a href="mailto:notriaconsultoria.01@gmail.com" className="font-yrsa text-notria-primary/70 hover:underline">notriaconsultoria.01@gmail.com</a>
+                        <a href="mailto:contato@consultorianotria.com.br" className="font-yrsa text-notria-primary/70 hover:underline">contato@consultorianotria.com.br</a>
                       </div>
                     </div>
 

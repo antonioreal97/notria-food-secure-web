@@ -39,6 +39,18 @@ const teamMembers = [
     description: "Administrador e Cientista de Dados.",
     image: "/assets/team6.png",
   },
+  {
+    name: "Eliana Rocha",
+    role: "Assistente de Gestão e Finanças",
+    description: "Especialista em Gestão Financeira e Administrativa",
+    image: "/assets/team7.png",
+  },
+  {
+    name: "Ana Luiza Barros",
+    role: "Consultora Pleno de Segurança Alimentar e Nutricional",
+    description: "Nutricionista e Especialista em Segurança Alimentar",
+    image: "/assets/team8.png",
+  },
 ];
 
 const Team = () => {
@@ -64,7 +76,7 @@ const Team = () => {
           </AnimatedSection>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {teamMembers.map((member, idx) => (
+            {teamMembers.slice(0, 6).map((member, idx) => (
               <AnimatedSection 
                 key={idx} 
                 {...(!isMobile ? {
@@ -80,6 +92,28 @@ const Team = () => {
                 <p className="font-yrsa text-notria-primary/60 text-sm group-hover:text-notria-primary/80 transition-colors duration-300">{member.description}</p>
               </AnimatedSection>
             ))}
+          </div>
+          
+          {/* Últimos dois membros centralizados */}
+          <div className="flex justify-center mt-8">
+            <div className="grid md:grid-cols-2 gap-8 max-w-2xl">
+              {teamMembers.slice(6).map((member, idx) => (
+                <AnimatedSection 
+                  key={idx + 6} 
+                  {...(!isMobile ? {
+                    animation: 'scale-in',
+                    delay: 400 + ((idx + 6) * 150),
+                    duration: 500
+                  } : {})}
+                  className="bg-notria-light p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group"
+                >
+                  <img src={member.image} alt={member.name} className="w-32 h-32 object-cover rounded-full mb-4 border-4 border-notria-primary group-hover:border-notria-secondary transition-colors duration-300" />
+                  <h3 className="font-poppins font-semibold text-xl text-notria-primary mb-2 group-hover:text-notria-secondary transition-colors duration-300">{member.name}</h3>
+                  <p className="font-yrsa text-notria-primary/80 mb-1 group-hover:text-notria-primary transition-colors duration-300">{member.role}</p>
+                  <p className="font-yrsa text-notria-primary/60 text-sm group-hover:text-notria-primary/80 transition-colors duration-300">{member.description}</p>
+                </AnimatedSection>
+              ))}
+            </div>
           </div>
         </div>
       </div>
