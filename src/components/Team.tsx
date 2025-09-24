@@ -35,8 +35,8 @@ const teamMembers = [
   },
   {
     name: "Antônio Real",
-    role: "Consultor em Análise de Dados e Sistemas",
-    description: "Administrador e Cientista de Dados.",
+    role: "Consultor em Desenvolvimento de Sistemas e Dados",
+    description: "Desenvolvedor e Cientista de Dados.",
     image: "/assets/team6.png",
   },
   {
