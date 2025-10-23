@@ -23,7 +23,7 @@ const teamMembers = [
   },
   {
     name: "Ana Mattos",
-    role: "Consultora Externa em Segurança Alimentar e Nutricional",
+    role: "Consultora Sênior em Segurança Alimentar e Nutricional",
     description: "Nutricionista e Doutora em Políticas Públicas",
     image: "/assets/team4.png",
   },
