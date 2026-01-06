@@ -54,7 +54,7 @@ const teamMembers = [
   },
   {
     name: "Murilo Lyra",
-    role: "Consultor em Segurança Alimentar e Nutricional",
+    role: "Consultor Plenoem Segurança Alimentar e Nutricional",
     description: "Nutricionista e Especialista em Atenção Básica e Saúde da Família",
     image: "/assets/team9.png",
   },
