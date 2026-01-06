@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, User, BookOpen, ChevronDown, ChevronUp } from "lucide-react";
+import { ExternalLink, User, BookOpen, ChevronDown, ChevronUp, FileText } from "lucide-react";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -10,6 +11,7 @@ const colaboradores = [
   {
     nome: "Natalia Tenuta",
     image: "/assets/team1.png",
+    curriculo: "Responsável pela gestão estratégica e operacional da Notriá; supervisiona a execução dos projetos e consultorias; atua na articulação com clientes, parceiros e instituições e lidera o desenvolvimento de novos serviços e oportunidades de negócio. Nutricionista, especialista em Gestão de Alimentos e Alimentação Coletiva, mestre em Saúde, Sociedade e Ambiente e doutora em Saúde Coletiva. Atuou como nutricionista e responsável técnica de bancos de alimentos mineiros. Foi consultora da Organização das Nações Unidas para Agricultura e Alimentação (FAO/ONU) e da UNESCO com atuação na Coordenação-Geral de Educação Alimentar e Nutricional do Ministério do Desenvolvimento Social (CGEAN/MDS) e na Coordenação-Geral de Equipamentos Públicos do Ministério da Cidadania (CGEP/MC). Atuou como assessora do Mesa Brasil Sesc. Foi docente temporária do Departamento de Nutrição e docente convidada no curso de pós-graduação Lato sensu em Educação em Direitos Humanos da Universidade Federal dos Vales do Jequitinhonha e Mucuri (UFVJM). Atuou como Coordenadora-Geral de Equipamentos Públicos de Segurança Alimentar e Nutricional do Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome. Possui experiência profissional e em pesquisas na área de segurança alimentar e nutricional, atuando, principalmente, nos seguintes temas: perdas e desperdícios de alimentos, bancos de alimentos, alimentação adequada e saudável e educação alimentar e nutricional.",
     materiais: [
       {
         tipo: "Artigos completos publicados em periódicos",
@@ -171,6 +173,7 @@ const colaboradores = [
   {
     nome: "Juliana Theodora",
     image: "/assets/team2.png",
+    curriculo: "Coordena o desenvolvimento de metodologias aplicadas à SAN; supervisiona a produção de relatórios técnicos, pareceres e estudos científicos; atua na inovação e aprimoramento das abordagens utilizadas pela consultoria e realiza interface entre pesquisa e implementação de políticas públicas. Nutricionista, Doutora, Mestre e Bacharel em Nutrição. Especialização pelo Programa de Residência Multiprofissional em Saúde da Família. Foi consultora da Organização das Nações Unidas para Agricultura e Alimentação (FAO/ONU) e do Instituto Interamericano de Cooperação para a Agricultura (IICA) na Coordenação de Equipamentos Públicos do Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (CGESAN/MDS). Atuou como assessora do Centro Colaborador em Alimentação e Nutrição do Escolar (CECANE/SC). Possui experiência em Gestão de Saúde como Diretora Executiva de Saúde. Atuou como professora nos Cursos de Nutrição na UniSociesc de Jaraguá do Sul/SC e dos cursos de Nutrição e Enfermagem do Centro Universitário do Cerrado Patrocínio/MG (UNICERP). E atuou como conselheira do Conselho Estadual de Segurança Alimentar e Nutricional de Santa Catarina (CONSEA/SC) e como revisora do novo Guia Alimentar para Crianças Menores de 2 anos, na etapa das Oficinas Estaduais em Santa Catarina (2018). Possui experiência profissional, técnica e como pesquisadora na área de Políticas Públicas de Alimentação e Nutrição e Segurança Alimentar e Nutricional, atuando, principalmente, nos seguintes temas: Equipamentos Públicos de Segurança Alimentar e Nutricional (Restaurantes Populares, Cozinhas Comunitárias, Cozinhas Solidárias), Alimentação Adequada e Saudável, Educação Alimentar e Nutricional, Alimentação Escolar e Atuação do Nutricionista na Atenção Básica à Saúde.",
     materiais: [
       {
         tipo: "Artigos completos publicados em periódicos",
@@ -252,6 +255,7 @@ const colaboradores = [
   {
     nome: "Milena Martins",
     image: "/assets/team3.png",
+    curriculo: "Desenvolve e coordena pesquisas na área de segurança alimentar e nutricional; responsável pela elaboração de diagnósticos e análises sobre políticas públicas e impacto social; atua na assessoria técnica para organizações governamentais, privadas e do terceiro setor e participa da construção de estratégias baseadas em evidências para a consultoria. Nutricionista, Mestra e Doutoranda pelo Programa de Pós-graduação em Nutrição. É integrante e fundadora do grupo de pesquisa e extensão Teia de Articulação pelo Fortalecimento da Segurança Alimentar e Nutricional (TearSAN/UFSC). Atualmente é bolsista do projeto de extensão \"Qualificação do processo formativo dos atores envolvidos no Sistema Nacional de Segurança Alimentar e Nutricional\", financiado pelo Ministério de Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS). Apresenta experiência na área de Segurança Alimentar e Nutricional, com ênfase no Sistema e na Política Nacional de Segurança Alimentar e Nutricional.",
     materiais: [
       {
         tipo: "Artigos completos publicados em periódicos",
@@ -363,6 +367,7 @@ const colaboradores = [
   {
     nome: "Ana Mattos",
     image: "/assets/team4.png",
+    curriculo: "Desenvolve e coordena pesquisas na área de segurança alimentar e nutricional; responsável pela elaboração de diagnósticos e análises sobre políticas públicas e impacto social atua na implementação de Políticas Públicas de SAN - Nível Federal e participa da construção de estratégias baseadas em evidências para a consultoria. Nutricionista, Pós-doc em Nutrição Alimentação e Saúde, Doutora em Políticas Públicas, Mestre em Ciências Sociais e Especialista em Saúde Mental pelo Programa de Residência Multiprofissional. PhD Student Universidad de Barcelona. Experiência como técnica no Ministério do Desenvolvimento Social, Família e Combate à Fome (MDS). Experiência em Docência como Professora Substituta na Faculdade de Medicina - Departamento de Medicina Social da Universidade Federal do Rio Grande do Sul/UFRGS; Experiência como Professora Tutora do Curso Técnico em Agente Comunitário de Saúde (ACS) e do Curso Técnico em Vigilância em Saúde com Ênfase no Combate às Endemias (ACE), promovidos pelo convênio do Ministério da Saúde e Conselho Nacional de Secretarias Municipais de Saúde (CONASEMS) com a UFRGS. Tem caminhada no controle social tendo sido Presidenta de Conselho Municipal de Segurança Alimentar e Nutricional e Vice-Presidência do Conselho Estadual de Segurança Alimentar e Nutricional ConseaRS.",
     materiais: [
       {
         tipo: "Capítulo de livro publicado",
@@ -474,21 +479,25 @@ const colaboradores = [
   {
     nome: "Isabela Matos",
     image: "/assets/team5.png",
+    curriculo: "Apoia atividades técnicas e operacionais em projetos de segurança alimentar e nutricional; contribui com análises jurídicas sobre legislações e políticas públicas relacionadas à área; auxilia na elaboração de pareceres, relatórios e estudos regulatórios e atua na interface entre direito e nutrição, fornecendo suporte normativo para as consultorias.",
     materiais: [] // Sem materiais publicados
   },
   {
     nome: "Antônio Real",
     image: "/assets/team6.png",
+    curriculo: "Pesquisa novas tecnologias e tendências de mercado para manter a Notriá atualizada e competitiva; como desenvolvedor atua na manutenção e aprimoramento do site da Notriá; analisa fluxos de trabalho e propõe melhorias tecnológicas para aumentar a eficiência operacional da Notriá e cria ferramentas sob medida para atender demandas específicas dos diferentes setores.",
     materiais: [] // Sem materiais publicados
   },
   {
     nome: "Eliana Rocha",
     image: "/assets/team7.png",
+    curriculo: "Profissional pós-graduada em Administração de Empresas e técnica em Ciência de Dados, com sólida atuação em melhoria de processos nas áreas financeira, administrativa e de produção. Especialista em planejamento estratégico, utilizando ferramentas contemporâneas para análise e gestão de dados. Possui experiência na elaboração de demonstrativos comerciais, operacionais e financeiros, bem como na gestão de contratos, coordenação de rotinas e liderança de equipes multidisciplinares. Atua na integração entre dados, processos e resultados, com foco em eficiência, organização e entregas de valor.",
     materiais: [] // Sem materiais publicados
   },
   {
     nome: "Ana Luiza Barros",
     image: "/assets/team8.png",
+    curriculo: "Nutricionista graduada pela Universidade de Brasília (UnB), mestranda do Programa de Pós-Graduação em Saúde Coletiva do Instituto René Rachou (Fiocruz Minas). Desenvolve dissertação na área de avaliação de políticas públicas, com foco no Programa Cozinha Solidária. Atua em pesquisas e na elaboração de trabalhos técnicos relacionados à segurança alimentar e nutricional, proteção social, avaliação de impacto de políticas sociais e sistemas alimentares sustentáveis.",
     materiais: [
       {
         tipo: "Capítulos de livros publicados",
@@ -516,13 +525,44 @@ const colaboradores = [
         link: "https://www.sciencedirect.com/science/article/pii/S0753332218341623?via%3Dihub"
       }
     ]
+  },
+  {
+    nome: "Murilo Lyra",
+    image: "/assets/team9.png",
+    curriculo: "Atua como consultor em segurança alimentar e nutricional com ênfase em diagnóstico, avaliação e monitoramento de políticas públicas de SAN. É mestre em Nutrição pelo Programa de Pós-Graduação em Nutrição da Universidade Federal de Santa Catarina (PPGN/UFSC), especialista em Atenção Básica e Saúde da Família na modalidade de Residência Multiprofissional pela Universidade do Vale do Itajaí (UNIVALI) e nutricionista graduado pela mesma instituição. Possui experiência em pesquisa e extensão, com atuação nacional como extensionista vinculada ao Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), como assessor técnico para elaboração da Trilha de Formação dos Atores envolvidos no SISAN (FORMASAN). Sua trajetória é voltada para a saúde coletiva, e ao fortalecimento de políticas públicas, de SAN e intersetorialidades.",
+    materiais: [] // Sem materiais publicados
   }
 ];
 
 const Colaboradores = () => {
+  const location = useLocation();
   const [selectedColaborador, setSelectedColaborador] = useState<number | null>(null);
   const [animating, setAnimating] = useState(false);
   const [lastColaborador, setLastColaborador] = useState<number | null>(null);
+  const [materiaisExpanded, setMateriaisExpanded] = useState(false);
+
+  useEffect(() => {
+    // Verifica se há um índice de colaborador no state da navegação
+    if (location.state && typeof location.state.colaboradorIndex === 'number') {
+      const index = location.state.colaboradorIndex;
+      if (index >= 0 && index < colaboradores.length) {
+        setSelectedColaborador(index);
+        setMateriaisExpanded(false); // Reset estado de expansão ao mudar colaborador
+        // Scroll suave para a seção de detalhes após um pequeno delay
+        setTimeout(() => {
+          const detailsSection = document.querySelector('[data-colaborador-details]');
+          if (detailsSection) {
+            detailsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 300);
+      }
+    }
+  }, [location.state]);
+
+  // Reset estado de expansão quando o colaborador muda
+  useEffect(() => {
+    setMateriaisExpanded(false);
+  }, [selectedColaborador]);
 
   const handleSelect = (idx: number) => {
     if (selectedColaborador === idx) return;
@@ -591,7 +631,7 @@ const Colaboradores = () => {
             </div>
 
             {/* Colaborador Details */}
-            <div className="flex-1 min-h-[400px] flex items-center">
+            <div className="flex-1 min-h-[400px] flex items-center" data-colaborador-details>
               {selectedColaborador === null ? (
                 <Card className="h-full flex items-center justify-center p-8 w-full">
                   <div className="text-center text-gray-500">
@@ -615,45 +655,89 @@ const Colaboradores = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
+                      {/* Currículo */}
+                      {colaboradores[selectedColaborador].curriculo && (
+                        <div className="mb-8">
+                          <h4 className="font-poppins font-semibold text-notria-primary mb-3 flex items-center gap-2">
+                            <FileText size={20} />
+                            Currículo
+                          </h4>
+                          <div className="bg-notria-light/50 p-4 rounded-lg border-l-4 border-notria-primary">
+                            <p className="font-yrsa text-gray-700 leading-relaxed text-justify">
+                              {colaboradores[selectedColaborador].curriculo}
+                            </p>
+                          </div>
+                        </div>
+                      )}
+                      
+                      {/* Materiais */}
                       <div className="mb-6">
-                        <h4 className="font-poppins font-semibold text-notria-primary mb-3 flex items-center gap-2">
-                          <BookOpen size={20} />
-                          Materiais
-                        </h4>
-                        {colaboradores[selectedColaborador].materiais.length === 0 ? (
-                          <p className="text-gray-500 text-center">Nenhum material publicado até o momento.</p>
-                        ) : (
-                          <div className="space-y-4">
-                            {colaboradores[selectedColaborador].materiais.map((material, index) => (
-                              <div
-                                key={index}
-                                className={`border-l-4 border-notria-secondary pl-4 animate-slide-up`}
-                                style={{
-                                  animationDelay: `${index * 80}ms`,
-                                  animationFillMode: 'forwards',
-                                }}
+                        {colaboradores[selectedColaborador].materiais.length > 0 ? (
+                          <>
+                            <Button
+                              variant="ghost"
+                              className="w-full justify-between p-0 h-auto hover:bg-transparent mb-3 cursor-pointer group"
+                              onClick={() => setMateriaisExpanded(!materiaisExpanded)}
+                            >
+                              <h4 className="font-poppins font-semibold text-notria-primary flex items-center gap-2 group-hover:text-notria-secondary transition-colors">
+                                <BookOpen size={20} />
+                                Materiais
+                                <span className="text-sm font-normal text-notria-primary/60 group-hover:text-notria-secondary/60">
+                                  ({colaboradores[selectedColaborador].materiais.length})
+                                </span>
+                              </h4>
+                              <div 
+                                className="transition-transform duration-300 ease-in-out" 
+                                style={{ transform: materiaisExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}
                               >
-                                <h5 className="font-medium text-notria-primary mb-1">
-                                  {material.tipo}
-                                </h5>
-                                <p className="text-gray-600 mb-2">
-                                  {material.nome}
-                                </p>
-                                {material.link && (
-                                  <Button
-                                    variant="ghost"
-                                    size="sm"
-                                    className="text-notria-secondary hover:text-notria-secondary/80 p-0 h-auto"
-                                    asChild
-                                  >
-                                    <a href={material.link} target="_blank" rel="noopener noreferrer">
-                                      <ExternalLink size={14} className="mr-1" />
-                                      Acessar material
-                                    </a>
-                                  </Button>
-                                )}
+                                <ChevronDown size={20} className="text-notria-primary group-hover:text-notria-secondary transition-colors" />
                               </div>
-                            ))}
+                            </Button>
+                            
+                            {materiaisExpanded && (
+                              <div className="mt-4 animate-in fade-in slide-in-from-top-2 duration-300">
+                                <div className="space-y-4">
+                                  {colaboradores[selectedColaborador].materiais.map((material, index) => (
+                                    <div
+                                      key={index}
+                                      className={`border-l-4 border-notria-secondary pl-4 animate-slide-up`}
+                                      style={{
+                                        animationDelay: `${index * 80}ms`,
+                                        animationFillMode: 'forwards',
+                                      }}
+                                    >
+                                      <h5 className="font-medium text-notria-primary mb-1">
+                                        {material.tipo}
+                                      </h5>
+                                      <p className="text-gray-600 mb-2">
+                                        {material.nome}
+                                      </p>
+                                      {material.link && (
+                                        <Button
+                                          variant="ghost"
+                                          size="sm"
+                                          className="text-notria-secondary hover:text-notria-secondary/80 p-0 h-auto"
+                                          asChild
+                                        >
+                                          <a href={material.link} target="_blank" rel="noopener noreferrer">
+                                            <ExternalLink size={14} className="mr-1" />
+                                            Acessar material
+                                          </a>
+                                        </Button>
+                                      )}
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                          </>
+                        ) : (
+                          <div>
+                            <h4 className="font-poppins font-semibold text-notria-primary mb-3 flex items-center gap-2">
+                              <BookOpen size={20} />
+                              Materiais
+                            </h4>
+                            <p className="text-gray-500 text-center">Nenhum material publicado até o momento.</p>
                           </div>
                         )}
                       </div>

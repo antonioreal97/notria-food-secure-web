@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { useIsMobile } from "@/hooks/use-is-mobile";
 
@@ -51,10 +52,22 @@ const teamMembers = [
     description: "Nutricionista e Especialista em Segurança Alimentar",
     image: "/assets/team8.png",
   },
+  {
+    name: "Murilo Lyra",
+    role: "Consultor em Segurança Alimentar e Nutricional",
+    description: "Nutricionista e Especialista em Atenção Básica e Saúde da Família",
+    image: "/assets/team9.png",
+  },
 ];
 
 const Team = () => {
   const isMobile = useIsMobile();
+  const navigate = useNavigate();
+
+  const handleMemberClick = (index: number) => {
+    navigate("/colaboradores", { state: { colaboradorIndex: index } });
+  };
+
   return (
     <section id="equipe" className="py-20 relative bg-white">
       {/* Imagem de fundo */}
@@ -84,7 +97,8 @@ const Team = () => {
                   delay: 400 + (idx * 150),
                   duration: 500
                 } : {})}
-                className="bg-notria-light p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group"
+                className="bg-notria-light p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group cursor-pointer"
+                onClick={() => handleMemberClick(idx)}
               >
                 <img src={member.image} alt={member.name} className="w-32 h-32 object-cover rounded-full mb-4 border-4 border-notria-primary group-hover:border-notria-secondary transition-colors duration-300" />
                 <h3 className="font-poppins font-semibold text-xl text-notria-primary mb-2 group-hover:text-notria-secondary transition-colors duration-300">{member.name}</h3>
@@ -94,9 +108,9 @@ const Team = () => {
             ))}
           </div>
           
-          {/* Últimos dois membros centralizados */}
+          {/* Últimos membros centralizados */}
           <div className="flex justify-center mt-8">
-            <div className="grid md:grid-cols-2 gap-8 max-w-2xl">
+            <div className="grid md:grid-cols-3 gap-8 max-w-4xl">
               {teamMembers.slice(6).map((member, idx) => (
                 <AnimatedSection 
                   key={idx + 6} 
@@ -105,7 +119,8 @@ const Team = () => {
                     delay: 400 + ((idx + 6) * 150),
                     duration: 500
                   } : {})}
-                  className="bg-notria-light p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group"
+                  className="bg-notria-light p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group cursor-pointer"
+                  onClick={() => handleMemberClick(idx + 6)}
                 >
                   <img src={member.image} alt={member.name} className="w-32 h-32 object-cover rounded-full mb-4 border-4 border-notria-primary group-hover:border-notria-secondary transition-colors duration-300" />
                   <h3 className="font-poppins font-semibold text-xl text-notria-primary mb-2 group-hover:text-notria-secondary transition-colors duration-300">{member.name}</h3>

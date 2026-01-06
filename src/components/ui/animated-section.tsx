@@ -11,6 +11,7 @@ interface AnimatedSectionProps {
   threshold?: number;
   rootMargin?: string;
   triggerOnce?: boolean;
+  onClick?: () => void;
 }
 
 const animationClasses = {
@@ -49,6 +50,7 @@ export const AnimatedSection = ({
   threshold = 0.1,
   rootMargin = '0px',
   triggerOnce = true,
+  onClick,
 }: AnimatedSectionProps) => {
   const { elementRef, isIntersecting } = useIntersectionObserver({
     threshold,
@@ -71,6 +73,7 @@ export const AnimatedSection = ({
         transitionDelay: `${delay}ms`,
         transitionDuration: `${duration}ms`,
       }}
+      onClick={onClick}
     >
       {children}
     </div>
