@@ -54,7 +54,7 @@ const teamMembers = [
   },
   {
     name: "Murilo Lyra",
-    role: "Consultor Plenoem Segurança Alimentar e Nutricional",
+    role: "Consultor em Segurança Alimentar e Nutricional",
     description: "Nutricionista e Especialista em Atenção Básica e Saúde da Família",
     image: "/assets/team9.png",
   },
@@ -88,7 +88,7 @@ const Team = () => {
             </div>
           </AnimatedSection>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 items-stretch">
             {teamMembers.slice(0, 6).map((member, idx) => (
               <AnimatedSection 
                 key={idx} 
@@ -97,38 +97,36 @@ const Team = () => {
                   delay: 400 + (idx * 150),
                   duration: 500
                 } : {})}
-                className="bg-notria-light p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group cursor-pointer"
+                className="bg-notria-light p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group cursor-pointer h-full"
                 onClick={() => handleMemberClick(idx)}
               >
-                <img src={member.image} alt={member.name} className="w-32 h-32 object-cover rounded-full mb-4 border-4 border-notria-primary group-hover:border-notria-secondary transition-colors duration-300" />
-                <h3 className="font-poppins font-semibold text-xl text-notria-primary mb-2 group-hover:text-notria-secondary transition-colors duration-300">{member.name}</h3>
-                <p className="font-yrsa text-notria-primary/80 mb-1 group-hover:text-notria-primary transition-colors duration-300">{member.role}</p>
-                <p className="font-yrsa text-notria-primary/60 text-sm group-hover:text-notria-primary/80 transition-colors duration-300">{member.description}</p>
+                <img src={member.image} alt={member.name} className="w-32 h-32 object-cover rounded-full mb-4 border-4 border-notria-primary group-hover:border-notria-secondary transition-colors duration-300 flex-shrink-0" />
+                <h3 className="font-poppins font-semibold text-xl text-notria-primary mb-2 group-hover:text-notria-secondary transition-colors duration-300 h-[3rem] flex items-center justify-center line-clamp-2">{member.name}</h3>
+                <p className="font-yrsa text-notria-primary/80 mb-1 group-hover:text-notria-primary transition-colors duration-300 h-[3.5rem] flex items-center justify-center line-clamp-2">{member.role}</p>
+                <p className="font-yrsa text-notria-primary/60 text-sm group-hover:text-notria-primary/80 transition-colors duration-300 h-[2.5rem] flex items-center justify-center line-clamp-2">{member.description}</p>
               </AnimatedSection>
             ))}
           </div>
           
           {/* Últimos membros centralizados */}
-          <div className="flex justify-center mt-8">
-            <div className="grid md:grid-cols-3 gap-8 max-w-4xl">
-              {teamMembers.slice(6).map((member, idx) => (
-                <AnimatedSection 
-                  key={idx + 6} 
-                  {...(!isMobile ? {
-                    animation: 'scale-in',
-                    delay: 400 + ((idx + 6) * 150),
-                    duration: 500
-                  } : {})}
-                  className="bg-notria-light p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group cursor-pointer"
-                  onClick={() => handleMemberClick(idx + 6)}
-                >
-                  <img src={member.image} alt={member.name} className="w-32 h-32 object-cover rounded-full mb-4 border-4 border-notria-primary group-hover:border-notria-secondary transition-colors duration-300" />
-                  <h3 className="font-poppins font-semibold text-xl text-notria-primary mb-2 group-hover:text-notria-secondary transition-colors duration-300">{member.name}</h3>
-                  <p className="font-yrsa text-notria-primary/80 mb-1 group-hover:text-notria-primary transition-colors duration-300">{member.role}</p>
-                  <p className="font-yrsa text-notria-primary/60 text-sm group-hover:text-notria-primary/80 transition-colors duration-300">{member.description}</p>
-                </AnimatedSection>
-              ))}
-            </div>
+          <div className="grid md:grid-cols-3 gap-8 items-stretch mt-8">
+            {teamMembers.slice(6).map((member, idx) => (
+              <AnimatedSection 
+                key={idx + 6} 
+                {...(!isMobile ? {
+                  animation: 'scale-in',
+                  delay: 400 + ((idx + 6) * 150),
+                  duration: 500
+                } : {})}
+                className="bg-notria-light p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] group cursor-pointer h-full"
+                onClick={() => handleMemberClick(idx + 6)}
+              >
+                <img src={member.image} alt={member.name} className="w-32 h-32 object-cover rounded-full mb-4 border-4 border-notria-primary group-hover:border-notria-secondary transition-colors duration-300 flex-shrink-0" />
+                <h3 className="font-poppins font-semibold text-xl text-notria-primary mb-2 group-hover:text-notria-secondary transition-colors duration-300 h-[3rem] flex items-center justify-center line-clamp-2">{member.name}</h3>
+                <p className="font-yrsa text-notria-primary/80 mb-1 group-hover:text-notria-primary transition-colors duration-300 h-[3.5rem] flex items-center justify-center line-clamp-2">{member.role}</p>
+                <p className="font-yrsa text-notria-primary/60 text-sm group-hover:text-notria-primary/80 transition-colors duration-300 h-[2.5rem] flex items-center justify-center line-clamp-2">{member.description}</p>
+              </AnimatedSection>
+            ))}
           </div>
         </div>
       </div>
