@@ -29,6 +29,12 @@ const teamMembers = [
     image: "/assets/team4.png",
   },
   {
+    name: "Ana Luiza Barros",
+    role: "Consultora Pleno em Segurança Alimentar e Nutricional",
+    description: "Nutricionista e Especialista em Segurança Alimentar",
+    image: "/assets/team8.png",
+  },
+  {
     name: "Isabela Matos",
     role: "Estagiária de Nutrição e de Assistência Jurídica",
     description: "Bacharel em Direito e Graduanda em Nutrição",
@@ -47,14 +53,8 @@ const teamMembers = [
     image: "/assets/team7.png",
   },
   {
-    name: "Ana Luiza Barros",
-    role: "Consultora Pleno de Segurança Alimentar e Nutricional",
-    description: "Nutricionista e Especialista em Segurança Alimentar",
-    image: "/assets/team8.png",
-  },
-  {
     name: "Murilo Lyra",
-    role: "Consultor Pleno de Segurança Alimentar e Nutricional",
+    role: "Consultor Pleno em Segurança Alimentar e Nutricional",
     description: "Nutricionista e Especialista em Atenção Básica e Saúde da Família",
     image: "/assets/team9.png",
   },

@@ -477,24 +477,6 @@ const colaboradores = [
     ]
   },
   {
-    nome: "Isabela Matos",
-    image: "/assets/team5.png",
-    curriculo: "Apoia atividades técnicas e operacionais em projetos de segurança alimentar e nutricional; contribui com análises jurídicas sobre legislações e políticas públicas relacionadas à área; auxilia na elaboração de pareceres, relatórios e estudos regulatórios e atua na interface entre direito e nutrição, fornecendo suporte normativo para as consultorias.",
-    materiais: [] // Sem materiais publicados
-  },
-  {
-    nome: "Antônio Real",
-    image: "/assets/team6.png",
-    curriculo: "Pesquisa novas tecnologias e tendências de mercado para manter a Notriá atualizada e competitiva; como desenvolvedor atua na manutenção e aprimoramento do site da Notriá; analisa fluxos de trabalho e propõe melhorias tecnológicas para aumentar a eficiência operacional da Notriá e cria ferramentas sob medida para atender demandas específicas dos diferentes setores.",
-    materiais: [] // Sem materiais publicados
-  },
-  {
-    nome: "Eliana Rocha",
-    image: "/assets/team7.png",
-    curriculo: "Profissional pós-graduada em Administração de Empresas e técnica em Ciência de Dados, com sólida atuação em melhoria de processos nas áreas financeira, administrativa e de produção. Especialista em planejamento estratégico, utilizando ferramentas contemporâneas para análise e gestão de dados. Possui experiência na elaboração de demonstrativos comerciais, operacionais e financeiros, bem como na gestão de contratos, coordenação de rotinas e liderança de equipes multidisciplinares. Atua na integração entre dados, processos e resultados, com foco em eficiência, organização e entregas de valor.",
-    materiais: [] // Sem materiais publicados
-  },
-  {
     nome: "Ana Luiza Barros",
     image: "/assets/team8.png",
     curriculo: "Nutricionista graduada pela Universidade de Brasília (UnB), mestranda do Programa de Pós-Graduação em Saúde Coletiva do Instituto René Rachou (Fiocruz Minas). Desenvolve dissertação na área de avaliação de políticas públicas, com foco no Programa Cozinha Solidária. Atua em pesquisas e na elaboração de trabalhos técnicos relacionados à segurança alimentar e nutricional, proteção social, avaliação de impacto de políticas sociais e sistemas alimentares sustentáveis.",
@@ -525,6 +507,24 @@ const colaboradores = [
         link: "https://www.sciencedirect.com/science/article/pii/S0753332218341623?via%3Dihub"
       }
     ]
+  },
+  {
+    nome: "Isabela Matos",
+    image: "/assets/team5.png",
+    curriculo: "Apoia atividades técnicas e operacionais em projetos de segurança alimentar e nutricional; contribui com análises jurídicas sobre legislações e políticas públicas relacionadas à área; auxilia na elaboração de pareceres, relatórios e estudos regulatórios e atua na interface entre direito e nutrição, fornecendo suporte normativo para as consultorias.",
+    materiais: [] // Sem materiais publicados
+  },
+  {
+    nome: "Antônio Real",
+    image: "/assets/team6.png",
+    curriculo: "Pesquisa novas tecnologias e tendências de mercado para manter a Notriá atualizada e competitiva; como desenvolvedor atua na manutenção e aprimoramento do site da Notriá; analisa fluxos de trabalho e propõe melhorias tecnológicas para aumentar a eficiência operacional da Notriá e cria ferramentas sob medida para atender demandas específicas dos diferentes setores.",
+    materiais: [] // Sem materiais publicados
+  },
+  {
+    nome: "Eliana Rocha",
+    image: "/assets/team7.png",
+    curriculo: "Profissional pós-graduada em Administração de Empresas e técnica em Ciência de Dados, com sólida atuação em melhoria de processos nas áreas financeira, administrativa e de produção. Especialista em planejamento estratégico, utilizando ferramentas contemporâneas para análise e gestão de dados. Possui experiência na elaboração de demonstrativos comerciais, operacionais e financeiros, bem como na gestão de contratos, coordenação de rotinas e liderança de equipes multidisciplinares. Atua na integração entre dados, processos e resultados, com foco em eficiência, organização e entregas de valor.",
+    materiais: [] // Sem materiais publicados
   },
   {
     nome: "Murilo Lyra",
