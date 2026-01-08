@@ -7,6 +7,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const isColaboradoresPage = location.pathname === "/colaboradores";
+  const isNotrimapsPage = location.pathname === "/notrimaps";
+  const isHomePage = location.pathname === "/";
   const navigate = useNavigate();
 
   const menuItems = [
@@ -14,13 +16,14 @@ const Header = () => {
     { label: "Sobre Nós", href: "#sobre", isInternal: true },
     { label: "Soluções", href: "#servicos", isInternal: true },
     { label: "Diferenciais", href: "#diferenciais", isInternal: true },
+    { label: "Notrimaps", href: "/notrimaps", isInternal: false },
     { label: "Colaboradores", href: "/colaboradores", isInternal: false },
     { label: "Contato", href: "#contato", isInternal: true },
   ];
 
   const getHref = (item: typeof menuItems[0]) => {
     if (!item.isInternal) return item.href;
-    if (isColaboradoresPage) {
+    if (isColaboradoresPage || isNotrimapsPage) {
       return `/${item.href}`;
     }
     return item.href;
@@ -28,7 +31,7 @@ const Header = () => {
 
   const handleMenuClick = (item: typeof menuItems[0]) => {
     if (!item.isInternal) return;
-    if (isColaboradoresPage) {
+    if (isColaboradoresPage || isNotrimapsPage) {
       navigate("/", { state: { hash: item.href } });
     }
   };
@@ -57,7 +60,7 @@ const Header = () => {
                   href={getHref(item)}
                   className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
                   onClick={(e) => {
-                    if (isColaboradoresPage) {
+                    if (isColaboradoresPage || isNotrimapsPage) {
                       e.preventDefault();
                       handleMenuClick(item);
                     }
@@ -110,7 +113,7 @@ const Header = () => {
                     href={getHref(item)}
                     className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
                     onClick={(e) => {
-                      if (isColaboradoresPage) {
+                      if (isColaboradoresPage || isNotrimapsPage) {
                         e.preventDefault();
                         handleMenuClick(item);
                         setIsMenuOpen(false);

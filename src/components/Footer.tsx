@@ -11,6 +11,7 @@ const Footer = () => {
     { label: "Sobre", href: "#sobre", isInternal: true },
     { label: "Serviços", href: "#servicos", isInternal: true },
     { label: "Diferenciais", href: "#diferenciais", isInternal: true },
+    { label: "Notrimaps", href: "/notrimaps", isInternal: false },
     { label: "Contato", href: "#contato", isInternal: true },
   ];
 
@@ -50,18 +51,27 @@ const Footer = () => {
                 <ul className="space-y-2 font-yrsa">
                   {menuItems.map((item) => (
                     <li key={item.label}>
-                      <a
-                        href={getHref(item)}
-                        className="text-white/80 hover:text-white transition-colors"
-                        onClick={(e) => {
-                          if (isColaboradoresPage) {
-                            e.preventDefault();
-                            handleMenuClick(item);
-                          }
-                        }}
-                      >
-                        {item.label}
-                      </a>
+                      {item.isInternal ? (
+                        <a
+                          href={getHref(item)}
+                          className="text-white/80 hover:text-white transition-colors"
+                          onClick={(e) => {
+                            if (isColaboradoresPage) {
+                              e.preventDefault();
+                              handleMenuClick(item);
+                            }
+                          }}
+                        >
+                          {item.label}
+                        </a>
+                      ) : (
+                        <Link
+                          to={item.href}
+                          className="text-white/80 hover:text-white transition-colors"
+                        >
+                          {item.label}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>
