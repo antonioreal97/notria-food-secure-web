@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1467.47 847.44">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .7;
+      }
+
+      .cls-2 {
+        opacity: .5;
+      }
+
+      .cls-3 {
+        opacity: .3;
+      }
+
+      .cls-4 {
+        fill: #69c555;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="cls-4" cx="858.71" cy="671.86" r="85.61"/>
+    <circle class="cls-4" cx="1306.41" cy="161.05" r="161.05"/>
+    <polygon class="cls-4" points="1306.41 161.05 1185.29 54.9 794.33 615.43 923.09 728.28 1427.53 267.21 1306.41 161.05"/>
+  </g>
+  <g class="cls-1">
+    <g>
+      <circle class="cls-4" cx="587.5" cy="644.57" r="61"/>
+      <circle class="cls-4" cx="604.61" cy="160.83" r="114.77"/>
+      <polygon class="cls-4" points="604.61 160.83 489.91 156.78 526.53 642.41 648.47 646.72 719.3 164.89 604.61 160.83"/>
+    </g>
+  </g>
+  <g class="cls-2">
+    <g>
+      <circle class="cls-4" cx="392.24" cy="692.62" r="42.21"/>
+      <circle class="cls-4" cx="207.27" cy="413.41" r="79.41"/>
+      <polygon class="cls-4" points="207.27 413.41 141.06 457.27 357.05 715.93 427.43 669.31 273.47 369.55 207.27 413.41"/>
+    </g>
+  </g>
+  <g class="cls-3">
+    <circle class="cls-4" cx="246.66" cy="819.05" r="28.39"/>
+    <circle class="cls-4" cx="53.42" cy="703.32" r="53.41"/>
+    <polygon class="cls-4" points="53.42 703.32 25.98 749.14 232.08 843.4 261.25 794.69 80.86 657.5 53.42 703.32"/>
+  </g>
+</svg>

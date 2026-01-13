@@ -5,9 +5,9 @@ const Footer = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isColaboradoresPage = location.pathname === "/colaboradores";
+  const isNotrimapsPage = location.pathname === "/notrimaps";
 
   const menuItems = [
-    { label: "Início", href: "#inicio", isInternal: true },
     { label: "Sobre", href: "#sobre", isInternal: true },
     { label: "Serviços", href: "#servicos", isInternal: true },
     { label: "Diferenciais", href: "#diferenciais", isInternal: true },
@@ -17,17 +17,29 @@ const Footer = () => {
 
   const handleMenuClick = (item: typeof menuItems[0]) => {
     if (!item.isInternal) return;
-    if (isColaboradoresPage) {
+    if (isColaboradoresPage || isNotrimapsPage) {
       navigate("/", { state: { hash: item.href } });
     }
   };
 
   const getHref = (item: typeof menuItems[0]) => {
     if (!item.isInternal) return item.href;
-    if (isColaboradoresPage) {
+    if (isColaboradoresPage || isNotrimapsPage) {
       return `/${item.href}`;
     }
     return item.href;
+  };
+
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 100);
+    }
   };
 
   return (
@@ -38,9 +50,9 @@ const Footer = () => {
             {/* Brand */}
             <AnimatedSection animation="slide-up" delay={200}>
               <div>
-                <Link to="/">
+                <a href="/" onClick={handleLogoClick}>
                   <img src="/assets/logo-2.png" alt="Logo Notriá" className="h-17 mb-4" />
-                </Link>
+                </a>
               </div>
             </AnimatedSection>
 
@@ -56,7 +68,7 @@ const Footer = () => {
                           href={getHref(item)}
                           className="text-white/80 hover:text-white transition-colors"
                           onClick={(e) => {
-                            if (isColaboradoresPage) {
+                            if (isColaboradoresPage || isNotrimapsPage) {
                               e.preventDefault();
                               handleMenuClick(item);
                             }

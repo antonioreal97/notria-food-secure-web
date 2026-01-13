@@ -530,7 +530,58 @@ const colaboradores = [
     nome: "Murilo Lyra",
     image: "/assets/team9.png",
     curriculo: "Atua como consultor em segurança alimentar e nutricional com ênfase em diagnóstico, avaliação e monitoramento de políticas públicas de SAN. É mestre em Nutrição pelo Programa de Pós-Graduação em Nutrição da Universidade Federal de Santa Catarina (PPGN/UFSC), especialista em Atenção Básica e Saúde da Família na modalidade de Residência Multiprofissional pela Universidade do Vale do Itajaí (UNIVALI) e nutricionista graduado pela mesma instituição. Possui experiência em pesquisa e extensão, com atuação nacional como extensionista vinculada ao Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), como assessor técnico para elaboração da Trilha de Formação dos Atores envolvidos no SISAN (FORMASAN). Sua trajetória é voltada para a saúde coletiva, e ao fortalecimento de políticas públicas, de SAN e intersetorialidades.",
-    materiais: [] // Sem materiais publicados
+    materiais: [
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Entre a riqueza e a fome: condições para a promoção da segurança alimentar e nutricional nas capitais do Sul do Brasil (2023)",
+        link: "https://www.scielo.br/j/rn/a/xdD7bvF3WtNhvgMCyVrD7Mz/?lang=en"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "Descentralização normativa da agenda de segurança alimentar e nutricional: estudo descritivo das legislações publicadas nas capitais brasileiras (2022)",
+        link: "https://www.scielo.br/j/rn/a/FTmNK6SV7fTr98ZZPDpyLMx/?lang=en"
+      },
+      {
+        tipo: "Artigos completos publicados em periódicos",
+        nome: "WELCOMING IN THE PRIMARY HEALTHCARE OF THE HEALTH UNIQUE SYSTEM:A THEORETICALAND EPISTEMOLOGICAL PERSPECTIVE (2017)",
+        link: "https://ojs.fiepbulletin.net/index.php/fiepbulletin/article/view/5795/12301"
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Inovações e desafios na implementação da agenda de alimentação e nutrição no Sistema Único de Saúde.",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Ciclo de Formação da Rede Municipal de Ensino: Intolerâncias Alimentares",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Aproveitamento Integral de Alimentos.",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Práticas de higiene na Cozinha e Boas Práticas de Manipulação de Alimentos",
+        link: ""
+      },
+      {
+        tipo: "Trabalhos técnicos",
+        nome: "Alimentação Saudável Para Promoção de Saúde do Trabalhador (2015)",
+        link: ""
+      },
+      {
+        tipo: "Dissertação",
+        nome: "Avaliação das condições para o acesso à alimentação adequada nos municípios de Santa Catarina (2023)",
+        link: "https://repositorio.ufsc.br/bitstream/handle/123456789/250000/PNTR0328-D.pdf?sequence=1&isAllowed=y"
+      },
+      {
+        tipo: "Capítulos de livros publicados",
+        nome: "Fome no estado de Santa Catarina: evolução, raízes e perspectivas em período de múltiplas crises. In: Lauro Mattei. (Org.). O legado econômico e social da COVID-19 no Brasil e em Santa Catarina",
+        link: ""
+      }
+    ]
   }
 ];
 

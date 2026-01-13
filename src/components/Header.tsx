@@ -12,7 +12,6 @@ const Header = () => {
   const navigate = useNavigate();
 
   const menuItems = [
-    { label: "Início", href: "#inicio", isInternal: true },
     { label: "Sobre Nós", href: "#sobre", isInternal: true },
     { label: "Soluções", href: "#servicos", isInternal: true },
     { label: "Diferenciais", href: "#diferenciais", isInternal: true },
@@ -44,9 +43,9 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/">
               <img
-                src="/assets/logo-primary.png"
+                src="/assets/logo.svg"
                 alt="Logo Notriá"
-                className="h-20 w-auto mr-2"
+                className="h-9 w-auto mr-2"
               />
             </Link>
           </div>
