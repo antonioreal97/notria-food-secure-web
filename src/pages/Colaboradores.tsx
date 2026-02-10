@@ -535,7 +535,7 @@ const colaboradores = [
   {
     nome: "Emanuelle Dias",
     image: "/assets/team11.png",
-    curriculo: "Nutricionista. Consultora pleno em segurança alimentar e nutricional.",
+    curriculo: "Formada em Nutrição pela Universidade Federal de Santa Catarina (UFSC), bolsista e integrante do grupo TearSAN- Teia de Articulação pelo Fortalecimento de Segurança Alimentar e Nutricional, realiza pesquisas e trabalhos que envolvem o cenário da Segurança Alimentar e Nutricional: assessoria aos espaços de controle social para a garantia do Direito Humano à Alimentação Adequada, participação social e Equipamentos de SAN. Além da consultoria, atualmente trabalha com o projeto de extensão \"Qualificação do processo formativo dos atores envolvidos no Sistema Nacional de Segurança Alimentar e Nutricional\", financiado pelo Ministério de Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS). Ademais, tem experiência em estudos sobre a associação do consumo alimentar de estudantes e o ambiente alimentar em torno das escolas.",
     materiais: []
   },
   {

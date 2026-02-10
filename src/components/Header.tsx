@@ -11,11 +11,12 @@ const Header = () => {
   const isHomePage = location.pathname === "/";
   const navigate = useNavigate();
 
-  const menuItems = [
+  const menuItems: { label: string; href: string; isInternal: boolean; external?: boolean }[] = [
     { label: "Sobre Nós", href: "#sobre", isInternal: true },
     { label: "Soluções", href: "#servicos", isInternal: true },
     { label: "Diferenciais", href: "#diferenciais", isInternal: true },
     { label: "Notrimaps", href: "/notrimaps", isInternal: false },
+    { label: "Forms Notriá", href: "https://forms.consultorianotria.com.br/", isInternal: false, external: true },
     { label: "Colaboradores", href: "/colaboradores", isInternal: false },
     { label: "Contato", href: "#contato", isInternal: true },
   ];
@@ -64,6 +65,16 @@ const Header = () => {
                       handleMenuClick(item);
                     }
                   }}
+                >
+                  {item.label}
+                </a>
+              ) : item.external ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
                 >
                   {item.label}
                 </a>
@@ -120,6 +131,17 @@ const Header = () => {
                         setIsMenuOpen(false);
                       }
                     }}
+                  >
+                    {item.label}
+                  </a>
+                ) : item.external ? (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-notria-primary hover:text-notria-secondary transition-colors font-poppins font-medium"
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}
                   </a>
