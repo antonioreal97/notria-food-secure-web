@@ -527,61 +527,22 @@ const colaboradores = [
     materiais: [] // Sem materiais publicados
   },
   {
-    nome: "Murilo Lyra",
-    image: "/assets/team9.png",
-    curriculo: "Atua como consultor em segurança alimentar e nutricional com ênfase em diagnóstico, avaliação e monitoramento de políticas públicas de SAN. É mestre em Nutrição pelo Programa de Pós-Graduação em Nutrição da Universidade Federal de Santa Catarina (PPGN/UFSC), especialista em Atenção Básica e Saúde da Família na modalidade de Residência Multiprofissional pela Universidade do Vale do Itajaí (UNIVALI) e nutricionista graduado pela mesma instituição. Possui experiência em pesquisa e extensão, com atuação nacional como extensionista vinculada ao Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), como assessor técnico para elaboração da Trilha de Formação dos Atores envolvidos no SISAN (FORMASAN). Sua trajetória é voltada para a saúde coletiva, e ao fortalecimento de políticas públicas, de SAN e intersetorialidades.",
-    materiais: [
-      {
-        tipo: "Artigos completos publicados em periódicos",
-        nome: "Entre a riqueza e a fome: condições para a promoção da segurança alimentar e nutricional nas capitais do Sul do Brasil (2023)",
-        link: "https://www.scielo.br/j/rn/a/xdD7bvF3WtNhvgMCyVrD7Mz/?lang=en"
-      },
-      {
-        tipo: "Artigos completos publicados em periódicos",
-        nome: "Descentralização normativa da agenda de segurança alimentar e nutricional: estudo descritivo das legislações publicadas nas capitais brasileiras (2022)",
-        link: "https://www.scielo.br/j/rn/a/FTmNK6SV7fTr98ZZPDpyLMx/?lang=en"
-      },
-      {
-        tipo: "Artigos completos publicados em periódicos",
-        nome: "WELCOMING IN THE PRIMARY HEALTHCARE OF THE HEALTH UNIQUE SYSTEM:A THEORETICALAND EPISTEMOLOGICAL PERSPECTIVE (2017)",
-        link: "https://ojs.fiepbulletin.net/index.php/fiepbulletin/article/view/5795/12301"
-      },
-      {
-        tipo: "Trabalhos técnicos",
-        nome: "Inovações e desafios na implementação da agenda de alimentação e nutrição no Sistema Único de Saúde.",
-        link: ""
-      },
-      {
-        tipo: "Trabalhos técnicos",
-        nome: "Ciclo de Formação da Rede Municipal de Ensino: Intolerâncias Alimentares",
-        link: ""
-      },
-      {
-        tipo: "Trabalhos técnicos",
-        nome: "Aproveitamento Integral de Alimentos.",
-        link: ""
-      },
-      {
-        tipo: "Trabalhos técnicos",
-        nome: "Práticas de higiene na Cozinha e Boas Práticas de Manipulação de Alimentos",
-        link: ""
-      },
-      {
-        tipo: "Trabalhos técnicos",
-        nome: "Alimentação Saudável Para Promoção de Saúde do Trabalhador (2015)",
-        link: ""
-      },
-      {
-        tipo: "Dissertação",
-        nome: "Avaliação das condições para o acesso à alimentação adequada nos municípios de Santa Catarina (2023)",
-        link: "https://repositorio.ufsc.br/bitstream/handle/123456789/250000/PNTR0328-D.pdf?sequence=1&isAllowed=y"
-      },
-      {
-        tipo: "Capítulos de livros publicados",
-        nome: "Fome no estado de Santa Catarina: evolução, raízes e perspectivas em período de múltiplas crises. In: Lauro Mattei. (Org.). O legado econômico e social da COVID-19 no Brasil e em Santa Catarina",
-        link: ""
-      }
-    ]
+    nome: "Isabela Ewerton",
+    image: "/assets/team10.png",
+    curriculo: "Nutricionista. Consultora pleno em segurança alimentar e nutricional.",
+    materiais: []
+  },
+  {
+    nome: "Emanuelle Dias",
+    image: "/assets/team11.png",
+    curriculo: "Nutricionista. Consultora pleno em segurança alimentar e nutricional.",
+    materiais: []
+  },
+  {
+    nome: "Eduardo Rocha",
+    image: "/assets/team12.png",
+    curriculo: "Nutricionista. Consultor pleno em segurança alimentar e nutricional.",
+    materiais: []
   }
 ];
 
@@ -648,46 +609,71 @@ const Colaboradores = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-8">
-            {/* Sidebar */}
-            <div className="w-full md:w-1/3 lg:w-1/4">
-              <Card className="sticky top-4">
-                <CardHeader>
-                  <CardTitle className="font-poppins text-notria-primary">
-                    Colaboradores
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2">
-                    {colaboradores.map((colaborador, idx) => (
-                      <Button
-                        key={idx}
-                        variant={selectedColaborador === idx ? "default" : "ghost"}
-                        className={`w-full justify-start transition-all duration-200 ${
-                          selectedColaborador === idx
-                            ? "bg-notria-primary text-white scale-105 shadow-lg"
-                            : "hover:bg-notria-primary/10"
-                        }`}
-                        onClick={() => handleSelect(idx)}
-                        style={{
-                          transition: 'all 0.2s cubic-bezier(.4,0,.2,1)',
-                        }}
-                      >
-                        <User size={16} className="mr-2" />
-                        {colaborador.nome}
-                      </Button>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+            {/* Sidebar - visível apenas após clicar em uma foto */}
+            {selectedColaborador !== null && (
+              <div className="w-full md:w-1/3 lg:w-1/4">
+                <Card className="sticky top-4">
+                  <CardHeader>
+                    <CardTitle className="font-poppins text-notria-primary">
+                      Colaboradores
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-2">
+                      {colaboradores.map((colaborador, idx) => (
+                        <Button
+                          key={idx}
+                          variant={selectedColaborador === idx ? "default" : "ghost"}
+                          className={`w-full justify-start transition-all duration-200 ${
+                            selectedColaborador === idx
+                              ? "bg-notria-primary text-white scale-105 shadow-lg"
+                              : "hover:bg-notria-primary/10"
+                          }`}
+                          onClick={() => handleSelect(idx)}
+                          style={{
+                            transition: 'all 0.2s cubic-bezier(.4,0,.2,1)',
+                          }}
+                        >
+                          <User size={16} className="mr-2" />
+                          {colaborador.nome}
+                        </Button>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            )}
 
             {/* Colaborador Details */}
             <div className="flex-1 min-h-[400px] flex items-center" data-colaborador-details>
               {selectedColaborador === null ? (
-                <Card className="h-full flex items-center justify-center p-8 w-full">
-                  <div className="text-center text-gray-500">
-                    <User size={48} className="mx-auto mb-4" />
-                    <p className="text-lg">Selecione um colaborador para ver seus detalhes</p>
+                <Card className="h-full w-full p-8">
+                  <div className="text-center mb-8">
+                    <p className="font-poppins text-lg text-notria-primary/80">
+                      Selecione um colaborador para ver seus detalhes
+                    </p>
+                  </div>
+                  <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-6 md:gap-8">
+                    {colaboradores.map((colaborador, idx) => (
+                      <button
+                        key={idx}
+                        type="button"
+                        onClick={() => handleSelect(idx)}
+                        className="flex flex-col items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-notria-primary focus-visible:ring-offset-2 rounded-2xl p-2 transition-all duration-200 hover:scale-105 active:scale-100"
+                      >
+                        <div className="relative">
+                          <img
+                            src={colaborador.image}
+                            alt={colaborador.nome}
+                            className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-cover rounded-full border-2 border-notria-primary/30 group-hover:border-notria-primary group-hover:shadow-lg transition-all duration-200"
+                          />
+                          <span className="absolute inset-0 rounded-full bg-notria-primary/0 group-hover:bg-notria-primary/10 transition-colors duration-200" aria-hidden />
+                        </div>
+                        <span className="font-yrsa text-sm text-notria-primary text-center line-clamp-2 group-hover:text-notria-secondary transition-colors">
+                          {colaborador.nome}
+                        </span>
+                      </button>
+                    ))}
                   </div>
                 </Card>
               ) : (

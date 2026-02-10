@@ -53,10 +53,22 @@ const teamMembers = [
     image: "/assets/team7.png",
   },
   {
-    name: "Murilo Lyra",
+    name: "Isabela Ewerton",
+    role: "Consultora Pleno em Segurança Alimentar e Nutricional",
+    description: "Nutricionista",
+    image: "/assets/team10.png",
+  },
+  {
+    name: "Emanuelle Dias",
+    role: "Consultora Pleno em Segurança Alimentar e Nutricional",
+    description: "Nutricionista",
+    image: "/assets/team11.png",
+  },
+  {
+    name: "Eduardo Rocha",
     role: "Consultor Pleno em Segurança Alimentar e Nutricional",
-    description: "Nutricionista e Especialista em Atenção Básica e Saúde da Família",
-    image: "/assets/team9.png",
+    description: "Nutricionista",
+    image: "/assets/team12.png",
   },
 ];
 
