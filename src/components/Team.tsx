@@ -55,7 +55,7 @@ const teamMembers = [
   {
     name: "Isabela Ewerton",
     role: "Consultora Pleno em Segurança Alimentar e Nutricional",
-    description: "Nutricionista",
+    description: "Gestora de Políticas Públicas com atuação em segurança alimentar e políticas públicas.",
     image: "/assets/team10.png",
   },
   {
@@ -67,7 +67,7 @@ const teamMembers = [
   {
     name: "Eduardo Rocha",
     role: "Consultor Pleno em Segurança Alimentar e Nutricional",
-    description: "Nutricionista",
+    description: "Administrador com 15 anos de experiência em agroecologia e segurança alimentar.",
     image: "/assets/team12.png",
   },
 ];

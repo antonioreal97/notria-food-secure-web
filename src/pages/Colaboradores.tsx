@@ -529,7 +529,7 @@ const colaboradores = [
   {
     nome: "Isabela Ewerton",
     image: "/assets/team10.png",
-    curriculo: "Nutricionista. Consultora pleno em segurança alimentar e nutricional.",
+    curriculo: "Gestora de Políticas Públicas, bacharela pela Universidade de Brasília (UnB), licenciada em Geografia (Uniasselvi), com especializações em Gestão de Projetos (USP) e Responsabilidade Social e Terceiro Setor (UFRJ), e pós-graduanda em Gestão de Políticas Públicas Educacionais e Transformação Digital (UFAL). Possui mais de dez anos de experiência na gestão, coordenação, implementação, monitoramento e avaliação de projetos e políticas públicas em contextos federais, estaduais e municipais, com atuação em temáticas transversalizadas pela Segurança Alimentar e Nutricional, como educação, justiça climática e saneamento. Sua trajetória articula planejamento, execução e análise de resultados voltados ao fortalecimento institucional, combinando sólida formação técnica, experiência territorial - especialmente na Amazônia e em estados do Nordeste - e atuação em articulação interinstitucional entre governos, organizações da sociedade civil e comunidades.",
     materiais: []
   },
   {
@@ -541,7 +541,7 @@ const colaboradores = [
   {
     nome: "Eduardo Rocha",
     image: "/assets/team12.png",
-    curriculo: "Nutricionista. Consultor pleno em segurança alimentar e nutricional.",
+    curriculo: "Administrador formado pela Universidade do Vale do Itajaí (Univali, 2004). Membro da Comissão de Abastecimento, Equipamentos Públicos de Segurança Alimentar e Nutricional e Agricultura Urbana do Conselho de Segurança Alimentar e Nutricional Sustentável de Florianópolis, e do Grupo de Controle Social do Programa de Aquisição de Alimentos do Conselho Estadual de Segurança Alimentar e Nutricional de Santa Catarina. Foi Diretor-Presidente do Centro de Estudos e Promoção da Agricultura de Grupo (Cepagro) entre 2016 e 2022 e Presidente do Conselho de Segurança Alimentar e Nutricional Sustentável de Florianópolis entre 2015-2018 e 2023-2025. Atua há 15 anos com Agroecologia, Segurança Alimentar e Nutricional, Economia Solidária e Abastecimento Alimentar, com experiência em organizações da sociedade civil do campo agroecológico e popular.",
     materiais: []
   }
 ];
